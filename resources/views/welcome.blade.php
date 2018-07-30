@@ -30,13 +30,14 @@
                     <div class="column
                         is-one-quarter-desktop is-offset-1-desktop
                     ">
-                        <div class="me-image image is-128x128">
-                            <img class="me" src="images/me.png" alt="Avatar" style="width: 200px">
+                        <div class="me-image-container">
+                            <img class="me" src="images/me.png" alt="Avatar">
                         </div>
                     </div>
 
                     <div class="column is-desktop">
                         <h1 class="title">Some stuff about me.</h1>
+
 
                     </div>
                 </div>

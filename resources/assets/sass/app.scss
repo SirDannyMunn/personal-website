@@ -36,17 +36,20 @@ html {
   margin: 2%;
 }
 
-.me {
+.me-image-container {
+  position: relative;
+  height: 128px;
+  width: 128px;
+  overflow: hidden;
   border-radius: 50%;
+}
+
+.me {
   background-image: url(/images/me.png);
-  background-position: center center;
+  background-position: center bottom;
   background-size: 100%;
-  background-repeat: no-repeat;
-  width: 150px;
-  height: 150px;
-  top: 50%;
-  margin-top: -75px;
-  position: absolute;
+  width: auto;
+  height: auto;
 }
 
 .is-red {
