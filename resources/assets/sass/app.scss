@@ -1,0 +1,64 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bulma/bulma';
+
+html {
+  background-color: #323232;
+  font-family: Montserrat;
+}
+
+.navbar {
+  background: #3D3D3D;
+  height: 154px;
+}
+
+.text-large {
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 48px;
+  text-align: center;
+}
+
+.jumbotron {
+  margin: 5% 15%;
+  background: #C4C4C4;
+  border-radius: 314px;
+}
+
+.me-container {
+  margin: 2%;
+}
+
+.me {
+  border-radius: 50%;
+  background-image: url(/images/me.png);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  margin-top: -75px;
+  position: absolute;
+}
+
+.is-red {
+  background: #FF7C7C;
+  margin: 28px;
+  padding: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 168px;
+  border: #FF7C7C;
+}
+
+.is-red:hover {
+  background: rgba(0,0,0,0);
+  border: #FF7C7C;
+}
