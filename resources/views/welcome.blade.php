@@ -31,7 +31,7 @@
         <div id="burgers" class="navbar-menu">
             <div class="navbar-start">
                 <a class="navbar-item has-text-light" href="{{url('/mywork')}}">
-                    Things
+                    Things I did
                 </a>
 
                 <a class="navbar-item has-text-light" href="{{url('/mywork')}}">
@@ -60,7 +60,11 @@
                         Technical / Non-technical toggle
 
 
+
                         <ol>
+                            <li>Check icons 😀</li>
+                            <li>FULL STACK ✔️</li>
+                            <li>I press buttons and make things happen in the computers's brain</li>
                             <li>Learned how to make things that don't look like bootstraps home page</li>
                             <li>Learning ai because I want to become a super<s>villain</s>hero</li>
                         </ol>
@@ -86,7 +90,7 @@
 
     <div class="section has-text-centered">
         <div class="box">
-            You'll be able to hear my opinions on everything very soon.. For now, i hope you enjoy this pretty page
+            You'll be able to hear my opinions on everything very soon.. For now, i hope you enjoy this pretty page 😀
         </div>
     </div>
     </body>
