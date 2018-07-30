@@ -19,7 +19,7 @@ html {
 }
 
 h1 {
-  color: $lightGrey;
+  color: $lightGrey !important;
 }
 
 ::selection {
@@ -37,14 +37,6 @@ a:hover {
 .navbar {
   background: $darkGrey;
   height: 154px;
-}
-
-.text-large {
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 48px;
-  text-align: center;
 }
 
 .jumbotron {
@@ -74,10 +66,19 @@ a:hover {
   height: auto;
 }
 
-.about-me {
-  color: #363636;
+.text-large {
+  //font-style: normal;
+  //font-weight: normal;
+  //line-height: normal;
+  //font-size: 48px;
+  //text-align: center;
+
   font-size: 2rem;
   font-weight: 600;
+}
+
+.about-me {
+  color: #363636;
   line-height: 1.125;
 }
 

@@ -30,8 +30,12 @@
 
         <div id="burgers" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item has-text-light" href="/mywork">
+                <a class="navbar-item has-text-light" href="{{url('/mywork')}}">
                     Things
+                </a>
+
+                <a class="navbar-item has-text-light" href="{{url('/mywork')}}">
+                    Tools of choice
                 </a>
             </div>
         </div>
@@ -50,11 +54,18 @@
                 </div>
 
                 <div class="column is-desktop">
-                    <h1 class="about-me">
+                    <p class="about-me text-large">
 
-                        I'm a <strong><a href="google.com">freelance</a></strong> developer, <strong>indie maker</strong>, have a couple <strong>WIPPs</strong> in the pipeline
+                        {{--I'm a <strong><a href="google.com">freelance</a></strong> developer, <strong>indie maker</strong>, have a couple <strong>WIPPs</strong> in the pipeline--}}
 
-                    </h1>
+                        <ol>
+                            <li>Learned how to make things looks nice</li>
+                            <li>Learning ai because I want to become a super<s>villain</s>hero</li>
+                        </ol>
+
+                        I'm a freelance developer, available for <strong><a href="google.com">HIRE</a></strong>, and indie maker with several <strong><a href="google.com">PROJECTS</a></strong> WIP. You can here about my opinions below if that's your kinda thing ;) cheeky
+
+                    </p>
                 </div>
             </div>
         </div>
@@ -63,7 +74,7 @@
     <div class="section has-text-centered">
 
         <a>
-            {{--<h1>Blog</h1>--}}
+            <h1 class="title">Blog</h1>
             <svg width="174" height="68" viewBox="0 0 174 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line y1="-0.5" x2="108.231" y2="-0.5" transform="translate(0 1) rotate(38.2464)" stroke="#C4C4C4"/>
                 <line y1="-0.5" x2="111.4" y2="-0.5" transform="translate(85 68) rotate(-36.9728)" stroke="#C4C4C4"/>
@@ -73,7 +84,7 @@
 
     <div class="section has-text-centered">
         <div class="box">
-            Blogs coming soon
+            You'll be able to hear my opinions on everything very soon.. For now, i hope you enjoy this pretty page
         </div>
     </div>
     </body>
