@@ -37,6 +37,10 @@
                 <a class="navbar-item has-text-light" href="{{url('/mywork')}}">
                     Tools of choice
                 </a>
+
+                <a class="navbar-item has-text-light" href="{{url('/mywork')}}">
+                    Get in touch
+                </a>
             </div>
         </div>
     </nav>
@@ -90,7 +94,7 @@
 
     <div class="section has-text-centered">
         <div class="box">
-            You'll be able to hear my opinions on everything very soon.. For now, i hope you enjoy this pretty page 😀
+            You'll be able to hear my opinions on everything very soon.. For now, i hope you enjoy the prettiness of this page 😀 or maybe you think it could be better? Let me know!
         </div>
     </div>
     </body>
