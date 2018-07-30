@@ -57,9 +57,11 @@
                     <p class="about-me text-large">
 
                         {{--I'm a <strong><a href="google.com">freelance</a></strong> developer, <strong>indie maker</strong>, have a couple <strong>WIPPs</strong> in the pipeline--}}
+                        Technical / Non-technical toggle
+
 
                         <ol>
-                            <li>Learned how to make things looks nice</li>
+                            <li>Learned how to make things that don't look like bootstraps home page</li>
                             <li>Learning ai because I want to become a super<s>villain</s>hero</li>
                         </ol>
 
