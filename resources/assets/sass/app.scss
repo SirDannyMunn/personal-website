@@ -8,13 +8,34 @@
 // Bootstrap
 @import '~bulma/bulma';
 
+$red: #FF7C7C;
+$black: #363636;
+$darkGrey: #3D3D3D;
+$lightGrey: #C4C4C4;
+
 html {
   background-color: #323232;
   font-family: Montserrat;
 }
 
+h1 {
+  color: $lightGrey;
+}
+
+::selection {
+  //color: red;
+  background: yellow;
+}
+
+a {
+  color: $black;
+}
+a:hover {
+  color: $red;
+}
+
 .navbar {
-  background: #3D3D3D;
+  background: $darkGrey;
   height: 154px;
 }
 
@@ -27,8 +48,8 @@ html {
 }
 
 .jumbotron {
-  margin: 5% 15%;
-  background: #C4C4C4;
+  margin: 8% 15%;
+  background: $lightGrey;
   border-radius: 314px;
 }
 
@@ -42,6 +63,7 @@ html {
   width: 128px;
   overflow: hidden;
   border-radius: 50%;
+  margin: auto;
 }
 
 .me {
@@ -52,16 +74,33 @@ html {
   height: auto;
 }
 
+.about-me {
+  color: #363636;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
+}
+
 .is-red {
-  background: #FF7C7C;
+  background: $red;
   margin: 28px;
   padding: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 168px;
-  border: #FF7C7C;
+  border: $red;
 }
 
 .is-red:hover {
   background: rgba(0,0,0,0);
-  border: #FF7C7C;
+  border: 1px solid $red;
+  color: $lightGrey;
+}
+
+a.navbar-item:hover {
+  background-color: $darkGrey;
+  color: $lightGrey;
+}
+
+div.navbar-item:hover {
+  //color: $lightGrey;
 }
