@@ -97,6 +97,10 @@ a:hover {
   color: $lightGrey;
 }
 
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
 a.navbar-item:hover {
   background-color: $darkGrey;
   color: $lightGrey;
