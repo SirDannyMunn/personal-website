@@ -95,6 +95,7 @@ return [
         'application' => env('APP_NAME', 'Laravel'),
         'repository' => 'https://danthedangerman@bitbucket.org/danthedangerman/portfolio.git',
         'php_fpm_service' => 'php7.2-fpm',
+        'git_tty' => true,
     ],
 
     /*
