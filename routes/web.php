@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('mywork', function () {
     return response('Coming soon!');
 });
+
+Route::get('hire-me', function () {
+    return response('Coming soon!');
+});

@@ -8,6 +8,9 @@
 // Bootstrap
 @import '~bulma/bulma';
 
+// Animate css
+@import '~animate.css';
+
 $red: #FF7C7C;
 $black: #363636;
 $darkGrey: #3D3D3D;
@@ -39,8 +42,12 @@ a:hover {
   height: 154px;
 }
 
+.section {
+  padding: 2.5rem;
+}
+
 .jumbotron {
-  margin: 8% 15%;
+  margin: 7% 15% 3% 15%;
   background: $lightGrey;
   border-radius: 314px;
 }
@@ -67,12 +74,6 @@ a:hover {
 }
 
 .text-large {
-  //font-style: normal;
-  //font-weight: normal;
-  //line-height: normal;
-  //font-size: 48px;
-  //text-align: center;
-
   font-size: 2rem;
   font-weight: 600;
 }

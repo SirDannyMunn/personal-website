@@ -12,6 +12,7 @@
 
         <!-- Styles -->
         <link href="{{mix('css/app.css')}}" rel="stylesheet">
+        <link href="{{mix('css/vendor.css')}}" rel="stylesheet">
     </head>
     <body>
         <div id="app">
@@ -45,7 +46,7 @@
                 </div>
             </nav>
 
-            <div class="section jumbotron">
+            <div class="section jumbotron animated bounceInLeft fast">
                 <div class="me-container">
                     <div class="columns">
                         <div class="column
@@ -57,18 +58,19 @@
                             </div>
                         </div>
 
-                        <div class="column is-desktop">
+                        <div class="column is-desktop animated bounceIn delay-1s faster">
                             <p class="about-me text-large">
 
-                                {{--I'm a <strong><a href="google.com">freelance</a></strong> developer, <strong>indie maker</strong>, have a couple <strong>WIPPs</strong> in the pipeline--}}
-                                Technical / Non-technical toggle
+                                <strong><a href="google.com">Freelance</a></strong> developer, <strong>indie maker</strong>, have a couple <strong>WIPPs</strong> in the pipeline
+                                {{--Technical / Non-technical toggle--}}
 
                                 <ol>
                                     <li>Check icons 😀</li>
                                     <li>FULL STACK ✔️</li>
-                                    <li>I press buttons and make things happen in the computers's brain</li>
-                                    <li>Learned how to make things that don't look like bootstraps home page</li>
-                                    <li>Learning ai because I want to become a super<s>villain</s>hero</li>
+
+                                    {{--<li>I press buttons and make things happen in the computers's brain</li>--}}
+                                    {{--<li>Learned how to make things that don't look like bootstraps home page</li>--}}
+                                    {{--<li>Learning ai because I want to become a super<s>villain</s>hero</li>--}}
                                 </ol>
 
                                 I'm a freelance developer, available for <strong><a href="google.com">HIRE</a></strong>, and indie maker with several <strong><a href="google.com">PROJECTS</a></strong> WIP. You can here about my opinions below if that's your kinda thing ;) cheeky

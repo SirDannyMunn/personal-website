@@ -21,7 +21,7 @@ const app = new Vue({
     el: '#app',
     mounted() {
         $('#toTheBlog').click(() => {
-            window.scrollTo(0, window.innerHeight)
+            $(window).scroll(0, window.innerHeight)
         });
     },
     methods: {
