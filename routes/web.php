@@ -16,9 +16,14 @@ Route::get('/', function () {
 });
 
 Route::get('mywork', function () {
-    return response('Coming soon!');
+    return view('projects');
 });
 
 Route::get('hire-me', function () {
     return response('Coming soon!');
+});
+
+Route::post('message', function(\Illuminate\Http\Request $request) {
+
+    request();
 });
