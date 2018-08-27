@@ -24,6 +24,10 @@
             <a class="navbar-item has-text-light hover-underline" href="{{url('/mywork')}}">
                 Get in touch
             </a>
+
+            <a class="navbar-item has-text-light hover-underline" href="{{url('/about-me')}}">
+                About me
+            </a>
         </div>
     </div>
 </nav>

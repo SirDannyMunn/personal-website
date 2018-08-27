@@ -9,7 +9,7 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 import vueAxios from 'vue-axios';
-Vue.use(vueAxios);
+Vue.use(vueAxios, axios);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -19,6 +19,7 @@ Vue.use(vueAxios);
 
 Vue.component('scroll-to-view', require('./components/ScrollToView.vue'));
 Vue.component('hire-me-modal', require('./components/HireMeModal.vue'));
+Vue.component('shape-animation', require('./components/ShapeAnimation.vue'));
 
 const app = new Vue({
     el: '#app',
@@ -30,6 +31,7 @@ const app = new Vue({
     methods: {
         scroll() {
             console.log('clicked');
+
 
         }
     }

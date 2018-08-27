@@ -23,6 +23,10 @@ Route::get('hire-me', function () {
     return response('Coming soon!');
 });
 
+Route::get('about-me', function () {
+    return view('about_me');
+});
+
 Route::post('message', function(\Illuminate\Http\Request $request) {
 
     request();
