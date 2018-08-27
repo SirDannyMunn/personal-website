@@ -18,7 +18,7 @@ $lightGrey: #C4C4C4;
 
 html {
   background-color: #323232;
-  font-family: Montserrat;
+  font-family: 'Kosugi', sans-serif;
 }
 
 h1 {
@@ -113,7 +113,7 @@ div.navbar-item:hover {
   //color: $lightGrey;
 }
 
-/*@tailwind components;
+@tailwind components;
 @tailwind preflight;
-@tailwind utilities;*/
+@tailwind utilities;
 
