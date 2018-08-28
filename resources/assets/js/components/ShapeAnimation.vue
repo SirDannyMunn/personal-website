@@ -1,6 +1,6 @@
 <template>
     <div>
-        <svg width="968" height="628" viewBox="0 0 968 628" fill="none" >
+        <svg v-show="mess.visible" width="968" height="628" viewBox="0 0 968 628" fill="none" >
                 <rect width="967.669" height="627.696" fill="black" fill-opacity="0"/>
                 <path d="M6.97245 352.457L6.9725 352.457L6.97318 352.448C7.54996 344.418 8.47199 339.041 9.49441 336.01C10.0214 334.448 10.5121 333.709 10.8312 333.461C10.8759 333.426 10.9053 333.41 10.922 333.403C10.9535 333.416 11.045 333.464 11.1903 333.626C11.599 334.08 12.0906 335.048 12.5777 336.655C13.0544 338.227 13.495 340.299 13.8671 342.854C14.611 347.961 15.0707 354.917 15.0259 363.487C14.9477 378.43 13.7267 392.805 11.8826 403.424C10.9593 408.741 9.88707 413.073 8.74222 416.054C8.16759 417.55 7.59595 418.648 7.05309 419.354C6.7413 419.76 6.48465 419.979 6.28723 420.094C6.22655 419.916 6.1595 419.673 6.0904 419.357C5.87253 418.359 5.68141 416.856 5.52519 414.899C5.21383 411 5.0517 405.444 5.04789 398.863C5.04028 385.707 5.66526 368.527 6.97245 352.457ZM10.9389 333.398C10.9388 333.398 10.9356 333.399 10.9296 333.4C10.9361 333.397 10.9391 333.397 10.9389 333.398Z" stroke="#F2F2F2" stroke-width="2"/>
                 <path d="M11.3602 274.756L11.3602 274.756L11.3611 274.745C12.0179 266.411 12.5189 258.628 12.7805 252.645C12.9112 249.655 12.9826 247.107 12.9831 245.16C12.9833 244.188 12.9659 243.356 12.9283 242.69C12.892 242.048 12.8338 241.488 12.729 241.1C12.5555 240.459 12.7809 239.697 13.5753 238.862C14.3646 238.033 15.5999 237.274 17.0295 236.758L17.0555 236.748L17.0811 236.737C18.2962 236.221 18.845 236.331 19.1617 236.576C19.5864 236.905 20.0614 237.786 20.3544 239.85C20.9273 243.887 20.6712 251.263 19.8391 263.511L19.8388 263.515C18.1694 289.626 17.101 303.999 15.8438 311.85C15.2108 315.803 14.5502 317.945 13.8369 319.093C13.4979 319.638 13.1731 319.913 12.8691 320.067C12.5572 320.225 12.1785 320.299 11.6571 320.299C10.4426 320.298 9.91518 320.1 9.53403 319.537C9.04446 318.814 8.67128 317.32 8.59169 314.189C8.43479 308.018 9.40591 296.439 11.3602 274.756Z" stroke="#F2F2F2" stroke-width="2"/>
@@ -406,17 +406,26 @@
 
         <div class="absolute animation-text">
             <h1 class="text-6xl">
-                <span class="animated"
-                      :class="textAnimation.partOne">
-                Complex Problems</span>
-                <span
+                <span  v-show="text.partOne.visible"
+                      class="animated"
+                      :class="text.partOne.animation">
+                Complex Problems <br></span>
+                <span v-show="text.partTwo.visible"
                      class="animated"
-                     :class="textAnimation.partTwo">,<br>
+                     :class="text.partTwo.animation">
                 Simple Solutions.</span>
             </h1>
-            <!--<h1 class="text-5xl animated fadeIn delay-4s slower">
-                Premium web and mobile applications.
-            </h1>-->
+            <h1 v-show="text.partThree.visible"
+                class="text-4xl animated"
+                :class="text.partThree.animation">
+                Premium Web and Mobile Applications.
+            </h1>
+            <a href="/"
+                    v-show="button.visible"
+                    class="animated button is-red"
+                    :class="button.animation">
+                    <span class="text-3xl">Get in touch</span>
+            </a>
         </div>
     </div>
 </template>
@@ -424,33 +433,67 @@
 <script>
     import anime from 'animejs';
 
-    const delay = 3000;
-    const duration = 1000;
-    const sum = delay+duration;
-
     export default {
-        name: "ShapeAnimation",
+        name: "animation",
         data() {
             return {
                 elements: [],
-                textAnimation: {
-                    sum: sum,
-                    partOne: `delay-${sum/1000 - 1}s fadeOut fast`,
-                    partTwo: `delay-${sum/1000 + 1}s fadeIn`
+                text: {
+                    partOne: {
+                        visible: true,
+                        animation: 'fadeIn slower'
+                    },
+                    partTwo: {
+                        visible: false,
+                        animation: 'fadeIn slow'
+                    },
+                    partThree: {
+                        visible: false,
+                        animation: 'fadeIn slow'
+                    }
                 },
+                button: {
+                    visible: false,
+                    animation: 'fadeIn slow'
+                },
+                mess: {
+                    visible: false
+                },
+                stage: 0
             }
         },
         mounted() {
-            this.animate('alternate');
             window.setTimeout(() => {
-                this.animate();
-            }, sum);
+                this.text.partOne.animation = 'fadeOut slow';
+            }, 2000);
+            window.setTimeout(() => {
+                this.mess.visible = true;
+                this.animate(2000, 'easeInOutExpo');
+            }, 3000);
+            window.setTimeout(() => {
+                this.animate(1500, 'easeOutBack');
+            }, 5000);
+            window.setTimeout(() => {
+                this.text.partOne.visible = false;
+                this.text.partTwo.visible = true;
+                this.text.partTwo.animation = 'fadeIn slower';
+            }, 6000);
+            window.setTimeout(() => {
+                this.text.partThree.visible = true;
+
+            }, 9000);
+            window.setTimeout(() => {
+                this.button.visible = true;
+
+            }, 11000);
         },
         methods: {
-            animate() {
+            animate(duration, easing) {
                 let elements = document.querySelectorAll('path');
                 for (let i = 0; i < elements.length; i++) {
                     if (!!this.elements[i]) {
+                        this.elements[i].duration = duration;
+                        this.elements[i].easing = easing;
                         this.elements[i].reverse();
                         this.elements[i].play();
                         continue;
@@ -465,12 +508,10 @@
                             targets: el,
                             strokeDashoffset: [offset, 0],
                             duration: duration,
-                            // duration: anime.random(2000, 2000),
-                            delay: delay,
-                            // delay: anime.random(2000, 0),
+                            delay: 0,
                             loop: false,
                             direction: 'alternate',
-                            easing: 'easeInOutSine',
+                            easing: easing,
                             autoplay: true
                         });
                     }
