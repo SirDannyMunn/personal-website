@@ -406,12 +406,17 @@
 
         <div class="absolute animation-text">
             <h1 class="text-6xl">
-                <span class="animated fadeIn delay-7s slower">Complex Problems</span><span class="animated fadeIn delay-8s slower">,<br>
+                <span class="animated"
+                      :class="textAnimation.partOne">
+                Complex Problems</span>
+                <span
+                     class="animated"
+                     :class="textAnimation.partTwo">,<br>
                 Simple Solutions.</span>
             </h1>
-            <h1 class="text-5xl animated fadeIn delay-9s slower">
+            <!--<h1 class="text-5xl animated fadeIn delay-4s slower">
                 Premium web and mobile applications.
-            </h1>
+            </h1>-->
         </div>
     </div>
 </template>
@@ -419,50 +424,58 @@
 <script>
     import anime from 'animejs';
 
+    const delay = 3000;
+    const duration = 1000;
+    const sum = delay+duration;
+
     export default {
         name: "ShapeAnimation",
         data() {
             return {
-                elements: []
+                elements: [],
+                textAnimation: {
+                    sum: sum,
+                    partOne: `delay-${sum/1000 - 1}s fadeOut fast`,
+                    partTwo: `delay-${sum/1000 + 1}s fadeIn`
+                },
             }
         },
         mounted() {
-            this.animate();
-
+            this.animate('alternate');
             window.setTimeout(() => {
                 this.animate();
-            }, 4000);
+            }, sum);
         },
         methods: {
             animate() {
                 let elements = document.querySelectorAll('path');
                 for (let i = 0; i < elements.length; i++) {
+                    if (!!this.elements[i]) {
+                        this.elements[i].reverse();
+                        this.elements[i].play();
+                        continue;
+                    }
+
                     let el = elements[i];
                     let offset = anime.setDashoffset(el);
                     el.setAttribute('stroke-dashoffset', offset);
 
-                    if (!!this.elements[i]) {
-                        this.elements[i].reverse();
-                        this.elements[i].play();
-                    }
-
                     if (!this.elements[i]) {
-                        this.makeAnimation(el, i, offset, 'alternate');
+                        this.elements[i] = anime({
+                            targets: el,
+                            strokeDashoffset: [offset, 0],
+                            duration: duration,
+                            // duration: anime.random(2000, 2000),
+                            delay: delay,
+                            // delay: anime.random(2000, 0),
+                            loop: false,
+                            direction: 'alternate',
+                            easing: 'easeInOutSine',
+                            autoplay: true
+                        });
                     }
                 }
             },
-            makeAnimation(el, i, offset, direction) {
-                this.elements[i] = anime({
-                    targets: el,
-                    strokeDashoffset: [offset, 0],
-                    duration: anime.random(1000, 4000),
-                    delay: anime.random(0, 2000),
-                    loop: false,
-                    direction: direction,
-                    easing: 'easeInOutSine',
-                    autoplay: true
-                });
-            }
         }
     }
 </script>
@@ -473,15 +486,19 @@
         width: 95%;
     }
 
+    .delay-6s {
+        animation-delay: 6s;
+    }
+
     .delay-7s {
-        animation-delay: 9s;
+        animation-delay: 7s;
     }
 
     .delay-8s {
-        animation-delay: 11s;
+        animation-delay: 8s;
     }
 
     .delay-9s {
-        animation-delay: 13s;
+        animation-delay: 9s;
     }
 </style>
