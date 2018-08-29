@@ -464,12 +464,12 @@
         },
         mounted() {
             window.setTimeout(() => {
-                this.text.partOne.animation = 'fadeOut slow';
-            }, 2000);
+                this.text.partOne.animation = 'fadeOut slower';
+            }, 2250);
             window.setTimeout(() => {
                 this.mess.visible = true;
-                this.animate(2000, 'easeInOutExpo');
-            }, 3000);
+                this.animate(1500, 'easeInOutExpo');
+            }, 2500);
             window.setTimeout(() => {
                 this.animate(1500, 'easeOutBack');
             }, 5000);
@@ -477,7 +477,7 @@
                 this.text.partOne.visible = false;
                 this.text.partTwo.visible = true;
                 this.text.partTwo.animation = 'fadeIn slower';
-            }, 6000);
+            }, 5250);
             window.setTimeout(() => {
                 this.text.partThree.visible = true;
 
