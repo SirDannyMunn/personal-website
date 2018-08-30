@@ -463,31 +463,35 @@
             }
         },
         mounted() {
+            const one = 2500;
+            const two = one + 250;
+            const three = two + 750;
+            const four = three + 250;
+
             window.setTimeout(() => {
-                this.text.partOne.animation = 'fadeOut fast';
-            }, 2250);
+                this.text.partOne.animation = 'fadeOut faster';
+            }, one);
             window.setTimeout(() => {
                 this.mess.visible = true;
-                this.animate(1500, 'easeInOutExpo');
-            }, 2500);
+                this.animate(750, 'easeInOutExpo', 1000);
+            }, two);
             window.setTimeout(() => {
-                this.animate(1500, 'easeOutBack');
-            }, 5000);
+                this.animate(750, 'easeOutBack', 0);
+            }, three);
             window.setTimeout(() => {
                 this.text.partOne.visible = false;
                 this.text.partTwo.visible = true;
-                this.text.partTwo.animation = 'fadeIn slower';
-            }, 5250);
+                this.text.partTwo.animation = 'fadeIn faster';
+            }, four);
             window.setTimeout(() => {
                 this.text.partThree.visible = true;
-
             }, 9000);
             window.setTimeout(() => {
                 this.button.visible = true;
             }, 11000);
         },
         methods: {
-            animate(duration, easing) {
+            animate(duration, easing, elasticity) {
                 let elements = document.querySelectorAll('path');
                 for (let i = 0; i < elements.length; i++) {
                     if (!!this.elements[i]) {
@@ -507,9 +511,9 @@
                             targets: el,
                             strokeDashoffset: [offset, 0],
                             duration: duration,
-                            delay: 0,
                             loop: false,
                             direction: 'alternate',
+                            // elasticity: elasticity,
                             easing: easing,
                             autoplay: true
                         });
