@@ -424,7 +424,8 @@
                     v-show="button.visible"
                     class="animated button is-red"
                     :class="button.animation">
-                    <span class="text-3xl">Get in touch</span>
+                    <span class="text-3xl">
+                Get in touch</span>
             </a>
         </div>
     </div>
@@ -467,6 +468,8 @@
             const two = one + 250;
             const three = two + 750;
             const four = three + 250;
+            const five = four + 2000;
+            const six = five + 2000;
 
             window.setTimeout(() => {
                 this.text.partOne.animation = 'fadeOut faster';
@@ -485,10 +488,10 @@
             }, four);
             window.setTimeout(() => {
                 this.text.partThree.visible = true;
-            }, 9000);
+            }, five);
             window.setTimeout(() => {
                 this.button.visible = true;
-            }, 11000);
+            }, six);
         },
         methods: {
             animate(duration, easing, elasticity) {
