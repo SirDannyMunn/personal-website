@@ -1,6 +1,6 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item button is-large is-red" @click="$emit('hireMeClicked')">
+        <a class="navbar-item button is-large is-red" @click="$emit('contactMeClicked')">
             Hire me now
         </a>
 

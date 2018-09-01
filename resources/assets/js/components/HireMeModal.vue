@@ -2,14 +2,19 @@
     <div class="modal" :class="{ 'is-active' : style.visible }">
         <div class="modal-background"></div>
 
-        <div class="modal-card" :class="animation">
-            <header class="modal-card-head">
-                <p class="modal-card-title">Drop me a line 👍 </p>
-                <button class="delete" aria-label="close"
-                        @click="style.visible=false"
-                ></button>
+        <div class="modal-card rounded-full" :class="animation">
+            <header class="modal-card-head text-center py-8">
+                <p class="modal-card-title">
+                    <span class="mx-6">
+                        Drop me a line 👍
+                    </span>
+
+                    <button class="mx-6 my-1 delete" aria-label="close"
+                            @click="style.visible=false"
+                    ></button>
+                </p>
             </header>
-            <section class="modal-card-body">
+            <section class="modal-card-body p-8">
 
                 <div class="field">
                     <div class="control">
@@ -32,7 +37,9 @@
                     </div>
                 </div>
 
-                <div class="field is-grouped is-grouped-right">
+                <div class="field is-grouped is-grouped-right
+                    text-center py-4 mx-64
+                ">
                     <p class="control">
                         <a class="button is-primary" @click="submit"
                            :class="{ 'is-loading' : style.sending }">
@@ -67,7 +74,7 @@
             }
         },
         mounted() {
-            this.$root.$on('hireMeClicked', data => {
+            this.$root.$on('contactMeClicked', data => {
                 !this.style.visible
                     ? this.style.visible = true
                     : this.style.visible = false;

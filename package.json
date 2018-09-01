@@ -24,6 +24,7 @@
     "dependencies": {
         "animate.css": "^3.7.0",
         "animejs": "^2.2.0",
+        "aos": "^2.3.3",
         "bulma": "^0.7.1",
         "laravel-mix-tailwind": "^0.1.0",
         "tailwindcss": "^0.6.5",

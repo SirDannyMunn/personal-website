@@ -1,8 +1,6 @@
 
 {{--Button--}}
-<div class="section has-text-centered
-            animated bounceInUp fast delay-3s
-        ">
+<div class="section has-text-centered" data-aos="fade-in">
     <a id="toTheBlog!">
         <h1 class="title">Blog</h1>
         <svg width="174" height="68" viewBox="0 0 174 68" fill="none" xmlns="http://www.w3.org/2000/svg">

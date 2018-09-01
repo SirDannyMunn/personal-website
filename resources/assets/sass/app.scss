@@ -16,24 +16,22 @@ $black: #363636;
 $darkGrey: #3D3D3D;
 $lightGrey: #C4C4C4;
 
+::selection {
+  background: yellow;
+}
+
 html {
   background-color: #323232;
-  font-family: 'Kosugi', sans-serif;
-  //font-family: 'Indie Flower', cursive;
-
+  //font-family: 'Kosugi', sans-serif;
+  font-family: 'Indie Flower', cursive;
 }
 
 h1 {
   color: $lightGrey !important;
 }
 
-::selection {
-  //color: red;
-  background: yellow;
-}
-
 input {
-  color: black;
+  color: black !important;
 }
 
 a {
@@ -50,45 +48,6 @@ a:hover {
 
 .section {
   padding: 2.5rem;
-}
-
-.jumbotron {
-  margin: 7% 15% 3% 15%;
-  background: $lightGrey;
-  border-radius: 314px;
-}
-
-.me-container {
-  margin: 2%;
-}
-
-.me-image-container {
-  position: relative;
-  height: 138px;
-  width: 138px;
-  //height: 128px;
-  //width: 128px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 10% auto;
-}
-
-.me {
-  background-image: url(/images/me.png);
-  background-position: center bottom;
-  background-size: 100%;
-  width: auto;
-  height: auto;
-}
-
-.text-large {
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.about-me {
-  color: #363636;
-  line-height: 1.125;
 }
 
 .is-red {
@@ -115,9 +74,6 @@ a.navbar-item:hover {
   color: $lightGrey;
 }
 
-div.navbar-item:hover {
-  //color: $lightGrey;
-}
 
 @tailwind components;
 @tailwind preflight;
