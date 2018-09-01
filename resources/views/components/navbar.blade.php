@@ -21,12 +21,8 @@
                 Tools of choice
             </a>
 
-            <a class="navbar-item has-text-light hover-underline" href="{{url('/mywork')}}">
+            <a class="navbar-item has-text-light hover-underline" @click="$root.$emit('contactMeClicked')">
                 Get in touch
-            </a>
-
-            <a class="navbar-item has-text-light hover-underline" href="{{url('/about-me')}}">
-                About me
             </a>
         </div>
     </div>

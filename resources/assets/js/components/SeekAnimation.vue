@@ -6,7 +6,7 @@
                     <span  v-show="text.partOne.visible"
                           class="animated"
                           :class="text.partOne.animation">
-                    Complex Problems <br></span>
+                    Complex Problems, <br></span>
                     <span v-show="text.partTwo.visible"
                          class="animated"
                          :class="text.partTwo.animation">
@@ -18,6 +18,7 @@
                     Premium Web and Mobile Applications.
                 </h1>
                 <a  v-show="button.visible"
+                    data-aos="fade-up"
                     @click="$root.$emit('contactMeClicked')"
                     class="animated button is-red"
                     :class="button.animation">
@@ -206,7 +207,7 @@
                     class: ''
                 },
                 button: {
-                    visible: false,
+                    visible: true,
                     animation: 'fadeIn slow'
                 },
                 mess: {

@@ -16,18 +16,20 @@ Route::get('/', function () {
 });
 
 Route::get('mywork', function () {
-    return view('projects');
+    return comingSoon();
 });
 
 Route::get('hire-me', function () {
-    return response('Coming soon!');
+    return comingSoon();
 });
 
-Route::get('about-me', function () {
-    return view('about_me');
-});
+function comingSoon() {
+    return response()->json([
+        'coming' => 'soon!'
+    ]);
+}
 
 Route::post('message', function(\Illuminate\Http\Request $request) {
 
-    request();
+    return response(request(), 201);
 });

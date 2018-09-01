@@ -41,11 +41,11 @@
                     text-center py-4 mx-64
                 ">
                     <p class="control">
-                        <a class="button is-primary" @click="submit"
+                        <button class="button is-primary" @click="submit"
                            :class="{ 'is-loading' : style.sending }">
                             <span v-show="!style.sent">Send</span>
                             <span v-show="style.sent">Sent!</span>
-                        </a>
+                        </button>
                     </p>
                 </div>
             </section>
@@ -84,7 +84,12 @@
             submit() {
                 this.style.sending=true;
 
-                this.$root.axios.post('message', this.data);
+                this.$root.axios.post('message', this.data)
+                    .then(r => {
+                        this.style.sent = true;
+                        this.style.sending = false;
+                    })
+                ;
             }
         }
     }

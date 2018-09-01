@@ -15,12 +15,12 @@
                     <div class="about-me py-8">
 
                         <p class="text-4xl py-2">
-                            <strong><a href="">Indie product maker</a></strong>, also available for <strong><a> hire!</a></strong>
+                            <strong><a >Indie product maker</a></strong>, also available for <strong><a> hire!</a></strong>
                         </p>
 
                         <p class="text-2xl py-2">
                             Web & mobile application developer also with experience in design and data science. Open to contract work.
-                            <strong><u><a href="">Get in touch</a></u></strong>
+                            <strong><u><a @click="$root.$emit('contactMeClicked')">Get in touch</a></u></strong>
                         </p>
                     </div>
                 </div>

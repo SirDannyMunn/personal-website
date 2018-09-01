@@ -22,7 +22,7 @@ AOS.init();
  */
 
 Vue.component('scroll-to-view', require('./components/ScrollToView.vue'));
-Vue.component('hire-me-modal', require('./components/HireMeModal.vue'));
+Vue.component('contact-modal', require('./components/ContactModal.vue'));
 Vue.component('auto-animation', require('./components/AutoAnimation.vue'));
 Vue.component('seek-animation', require('./components/SeekAnimation.vue'));
 Vue.component('about-me', require('./components/AboutMe.vue'));

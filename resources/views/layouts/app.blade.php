@@ -21,7 +21,7 @@
 
     @include('components.navbar')
 
-    <hire-me-modal animation="animated fast bounceInLeft" out="bounceOutLeft"></hire-me-modal>
+    <contact-modal animation="animated fast bounceInLeft" out="bounceOutLeft"></contact-modal>
 
     <main>
         @yield('page')
