@@ -12,7 +12,7 @@
     </div>
 
     <div class="section has-text-centered" data-aos="fade-in">
-        <scroll-to-button title="Blog"></scroll-to-button>
+        <scroll-to-button title="Blog" element="blog"></scroll-to-button>
     </div>
 
     @include('components.blog')
