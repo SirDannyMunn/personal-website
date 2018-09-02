@@ -1,17 +1,17 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item button is-large is-red" @click="$emit('contactMeClicked')">
+        <a class="navbar-item button is-large is-red m-8 p-12" @click="$emit('contactMeClicked')">
             Hire me now
         </a>
 
-        <a role="button" class="navbar-burger" data-target="burgers" aria-label="menu" aria-expanded="false">
+        <a role="button" class="navbar-burger" data-target="burger" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
         </a>
     </div>
 
-    <div id="burgers" class="navbar-menu">
+    <div class="navbar-menu" id="burger">
         <div class="navbar-start">
             <a class="navbar-item has-text-light hover-underline" href="{{url('/mywork')}}">
                 Things I did

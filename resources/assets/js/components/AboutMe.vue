@@ -1,5 +1,5 @@
 <template>
-    <div class="section jumbotron animated bounceInLeft slow">
+    <div class="jumbotron p-10 animated bounceInLeft slow">
         <div class="me-container">
             <div class="columns">
                 <div class="column

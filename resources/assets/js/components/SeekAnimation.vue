@@ -1,26 +1,28 @@
 <template>
-    <div class="section text-center columns">
+    <div class="text-center columns">
         <div class="column lg:w-1/2">
-            <div class="h-full md:p-10 m-auto">
-                <h1 class="w-full lg:text-6xl md:text-4xl sm:text-3xl">
-                    <span>
-                    Complex Problems, <br>
-                    </span><span>
-                    Simple Solutions.
-                    </span>
-                </h1>
-                <h1 class="lg:text-4xl md:text-2xl sm:text-xl
-                    animated fadeIn slower">
-                    Premium Web and Mobile Applications.
-                </h1>
-                <a  data-aos="fade-up"
-                    @click="$root.$emit('contactMeClicked')"
-                    class="animated fadeIn slower
-                    button is-red p-12 my-4">
-                    <span class="text-3xl">
-                        Get in touch
-                    </span>
-                </a>
+            <div class="h-full lg:py-20">
+                <div class="align-bottom">
+                    <h1 class="lg:text-6xl md:text-5xl sm:text-3xl">
+                        <span>
+                        Complex Problems, <br>
+                        </span><span>
+                        Simple Solutions.
+                        </span>
+                    </h1>
+                    <h1 class="lg:text-4xl md:text-2xl sm:text-xl
+                        animated fadeIn slower">
+                        Premium Web and Mobile Applications.
+                    </h1>
+                    <a  data-aos="fade-up"
+                        @click="$root.$emit('contactMeClicked')"
+                        class="animated fadeIn slower
+                        button is-red p-12 my-4">
+                        <span class="text-3xl">
+                            Get in touch
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -196,11 +198,11 @@
             );
 
             let progress;
-            window.scrollMax = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            window.elPosDecimal = (document.getElementById('animation').offsetTop / window.document.documentElement.offsetHeight);
-            const elHeight = $('#animation').height() * elPosDecimal;
-            window.start = scrollMax * elPosDecimal - elHeight; // position
-            window.end = start + elHeight;
+            const scrollMax = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const elPosFraction = (document.getElementById('animation').offsetTop / window.document.documentElement.offsetHeight);
+            const elHeight = $('#animation').height() * elPosFraction;
+            const start = scrollMax * elPosFraction - elHeight;
+            const end = start + elHeight;
             window.addEventListener('scroll', (e) => {
                 if (window.scrollY >= start) {
 
