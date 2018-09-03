@@ -1,5 +1,5 @@
 <template>
-    <div class="section jumbotron animated bounceInLeft slow">
+    <div class="jumbotron p-10 animated bounceInLeft slow">
         <div class="me-container">
             <div class="columns">
                 <div class="column
@@ -14,7 +14,7 @@
                 <div class="column is-desktop animated bounceIn delay-2s faster">
                     <div class="about-me py-8">
 
-                        <p class="xl:text-4xl lg:text-3xl md:text-2xl py-2">
+                        <p class="xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl py-2">
                             <strong><a >Indie product maker</a></strong>, also available for <strong><a> hire!</a></strong>
                         </p>
 
@@ -43,9 +43,9 @@
         border-radius: 314px;
     }
 
-    .me-container {
+    /*.me-container {
         margin: 2%;
-    }
+    }*/
 
     .me-image-container {
         position: relative;

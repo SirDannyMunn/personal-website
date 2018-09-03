@@ -3,13 +3,13 @@
         <div class="modal-background"></div>
 
         <div class="modal-card rounded-full" :class="animation">
-            <header class="modal-card-head text-center py-8">
+            <header class="modal-card-head text-center p-12">
                 <p class="modal-card-title">
-                    <span class="mx-6">
-                        Drop me a line 👍
+                    <span class="">
+                        👍 Drop me a line
                     </span>
 
-                    <button class="mx-6 my-1 delete" aria-label="close"
+                    <button class=" my-1 delete" aria-label="close"
                             @click="style.visible=false"
                     ></button>
                 </p>
@@ -37,10 +37,8 @@
                     </div>
                 </div>
 
-                <div class="field is-grouped is-grouped-right
-                    text-center py-4 mx-64
-                ">
-                    <p class="control">
+                <div class="py-4">
+                    <p class="control text-center">
                         <button class="button is-primary" @click="submit"
                            :class="{ 'is-loading' : style.sending }">
                             <span v-show="!style.sent">Send</span>

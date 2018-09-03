@@ -21,7 +21,7 @@ AOS.init();
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('scroll-to-view', require('./components/ScrollToView.vue'));
+Vue.component('scroll-to-button', require('./components/ScrollToButton.vue'));
 Vue.component('contact-modal', require('./components/ContactModal.vue'));
 Vue.component('auto-animation', require('./components/AutoAnimation.vue'));
 Vue.component('seek-animation', require('./components/SeekAnimation.vue'));

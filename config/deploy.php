@@ -46,13 +46,12 @@ return [
     'hooks' => [
         // Right before we start deploying.
         'start' => [
-            'yarn',
-            'composer install',
+
         ],
         
         // Code and composer vendors are ready but nothing is built.
         'build' => [
-            'npm run prod'
+
         ],
         
         // Deployment is done but not live yet (before symlink)
@@ -72,7 +71,7 @@ return [
         
         // Deployment succeeded.
         'success' => [
-            //
+
         ],
         
         // Deployment failed.
