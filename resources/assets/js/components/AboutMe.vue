@@ -1,18 +1,15 @@
 <template>
     <div class="jumbotron p-10 animated bounceInLeft slow">
         <div class="me-container">
-            <div class="columns">
-                <div class="column
-                            is-one-quarter-desktop is-offset-1-desktop
-                            is-full-mobile
-                        ">
+            <div class="flex flex-wrap">
+                <div class="lg:w-1/4 md:w-full">
                     <div class="me-image-container animated bounceIn delay-1s faster">
                         <img class="me" src="images/me.png" alt="Avatar">
                     </div>
                 </div>
 
-                <div class="column is-desktop animated bounceIn delay-2s faster">
-                    <div class="about-me py-8">
+                <div class="lg:w-3/4 md:w-full">
+                    <div class="about-me animated bounceIn delay-2s faster py-8">
 
                         <p class="xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl py-2">
                             <strong><a >Indie product maker</a></strong>, also available for <strong><a> hire!</a></strong>
