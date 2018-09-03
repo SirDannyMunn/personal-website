@@ -56,7 +56,6 @@ let colors = {
   'grey-lightest': '#f8fafc',
   'white': '#ffffff',
 
-  'salmon' : '#FF7C7C',
 
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',
@@ -65,6 +64,9 @@ let colors = {
   'red-light': '#ef5753',
   'red-lighter': '#f9acaa',
   'red-lightest': '#fcebea',
+
+  'salmon' : '#FF7C7C',
+  'brown': '#3D3D3D',
 
   'orange-darkest': '#462a16',
   'orange-darker': '#613b1f',

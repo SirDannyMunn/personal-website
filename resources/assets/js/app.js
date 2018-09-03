@@ -29,15 +29,11 @@ Vue.component('about-me', require('./components/AboutMe.vue'));
 
 const app = new Vue({
     el: '#app',
-    mounted() {
-        $('#toTheBlog').click(() => {
-            $(window).scroll(0, window.innerHeight)
-        });
+    data: {
+        burgerOpen: false
     },
     methods: {
         scroll() {
-            console.log('clicked');
-
 
         }
     }
