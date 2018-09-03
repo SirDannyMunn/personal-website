@@ -18,6 +18,12 @@ return [
 
     'driver' => env('MAIL_DRIVER', 'smtp'),
 
+    'mailgun' => [
+        'domain' => 'your-mailgun-domain',
+        'secret' => 'c1fe131e-635cb335',
+    ],
+
+
     /*
     |--------------------------------------------------------------------------
     | SMTP Host Address

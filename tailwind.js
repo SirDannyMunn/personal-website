@@ -50,10 +50,13 @@ let colors = {
   'grey-darker': '#606f7b',
   'grey-dark': '#8795a1',
   'grey': '#b8c2cc',
+  // 'colour':'#C4C4C4',
   'grey-light': '#dae1e7',
   'grey-lighter': '#f1f5f8',
   'grey-lightest': '#f8fafc',
   'white': '#ffffff',
+
+  'salmon' : '#FF7C7C',
 
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',

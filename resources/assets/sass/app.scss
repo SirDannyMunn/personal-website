@@ -10,6 +10,7 @@
 
 @import "~bulma/sass/utilities/_all.sass";
 @import "~bulma/sass/elements/_all.sass";
+@import "~bulma/sass/layout/_all.sass";
 @import "~bulma/sass/components/_all.sass";
 
 // Animate css
@@ -42,7 +43,7 @@ a {
   color: $black;
 }
 a:hover {
-  color: $red;
+  cursor: pointer;
 }
 
 .navbar {

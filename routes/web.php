@@ -29,5 +29,8 @@ Route::get('hire-me', function () {
 
 Route::post('message', function(\Illuminate\Http\Request $request) {
 
+    \Illuminate\Support\Facades\Mail::to('dannymunn1995@gmail.com')
+                                  ->send(new \App\Mail\Contact(request()));
+
     return response(request(), 201);
 });

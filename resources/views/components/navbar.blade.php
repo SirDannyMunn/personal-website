@@ -13,15 +13,15 @@
 
     <div class="navbar-menu" id="burger">
         <div class="navbar-start">
-            <a class="navbar-item has-text-light hover-underline" href="{{url('/mywork')}}">
+            <a class="navbar-item text-grey-light hover:underline no-underline" href="{{url('/mywork')}}">
                 Things I did
             </a>
 
-            <a class="navbar-item has-text-light hover-underline" href="{{url('/mywork')}}">
+            <a class="navbar-item text-grey-light hover:underline no-underline" href="{{url('/mywork')}}">
                 Tools of choice
             </a>
 
-            <a class="navbar-item has-text-light hover-underline" @click="$root.$emit('contactMeClicked')">
+            <a class="navbar-item text-grey-light hover:underline no-underline" @click="$root.$emit('contactMeClicked')">
                 Get in touch
             </a>
         </div>

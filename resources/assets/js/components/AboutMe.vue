@@ -1,25 +1,27 @@
 <template>
     <div class="jumbotron p-10 animated bounceInLeft slow">
-        <div class="me-container">
-            <div class="flex flex-wrap">
-                <div class="lg:w-1/4 md:w-full">
-                    <div class="me-image-container animated bounceIn delay-1s faster">
-                        <img class="me" src="images/me.png" alt="Avatar">
-                    </div>
+        <div class="flex flex-wrap">
+
+            <!--Image-->
+            <div class="lg:w-1/4 md:w-full flex content-center">
+                <div class="rounded-full image is-128x128 is-rounded overflow-hidden
+                 m-auto
+                animated bounceIn delay-1s faster">
+                    <img class="me" src="images/me.png" alt="Avatar">
                 </div>
+            </div>
 
-                <div class="lg:w-3/4 md:w-full">
-                    <div class="about-me animated bounceIn delay-2s faster py-8">
+            <!--Text-->
+            <div class="lg:w-3/4 md:w-full">
+                <div class="animated bounceIn delay-2s faster py-8">
+                    <p class="xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl py-2">
+                        <strong><a class="hover:text-salmon">Indie product maker</a></strong>, also available for <strong><a> hire!</a></strong>
+                    </p>
 
-                        <p class="xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl py-2">
-                            <strong><a >Indie product maker</a></strong>, also available for <strong><a> hire!</a></strong>
-                        </p>
-
-                        <p class="xl:text-3xl lg:text-2xl md:text-xl py-2">
-                            Web & mobile application developer also with experience in design and data science. Open to contract work.
-                            <strong><u><a @click="$root.$emit('contactMeClicked')">Get in touch</a></u></strong>
-                        </p>
-                    </div>
+                    <p class="xl:text-3xl lg:text-2xl md:text-xl py-2">
+                        Web & mobile application developer also with experience in design and data science. Open to contract work.
+                        <strong><u><a class="hover:text-salmon" @click="$root.$emit('contactMeClicked')">Get in touch</a></u></strong>
+                    </p>
                 </div>
             </div>
         </div>
@@ -35,22 +37,10 @@
 <style scoped>
 
     .jumbotron {
-        margin: 7% 15% 3% 15%;
+        /*margin: 7% 15% 3% 15%;*/
+        margin: 0 15%;
         background: #D3D3D3;
         border-radius: 314px;
-    }
-
-    /*.me-container {
-        margin: 2%;
-    }*/
-
-    .me-image-container {
-        position: relative;
-        height: 138px;
-        width: 138px;
-        overflow: hidden;
-        border-radius: 50%;
-        margin: 10% auto;
     }
 
     .me {
@@ -61,13 +51,8 @@
         height: auto;
     }
 
-    .text-large {
-        font-size: 2rem;
-        font-weight: 600;
-    }
-
     .about-me {
-        color: #363636;
-        line-height: 1.125;
+        /*color: #363636;*/
+        /*line-height: 1.125;*/
     }
 </style>
