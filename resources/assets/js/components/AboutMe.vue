@@ -2,15 +2,19 @@
     <div class="jumbotron p-10 animated bounceInLeft slow">
         <div class="me-container">
             <div class="columns">
-                <div class="column
+
+                <!--Image-->
+                <div class="column flex content-center
                             is-one-quarter-desktop is-offset-1-desktop
-                            is-full-mobile
-                        ">
-                    <div class="me-image-container animated bounceIn delay-1s faster">
+                            is-full-mobile">
+                    <div class="rounded-full image is-128x128 is-rounded overflow-hidden
+                     m-auto
+                    animated bounceIn delay-1s faster">
                         <img class="me" src="images/me.png" alt="Avatar">
                     </div>
                 </div>
 
+                <!--Text-->
                 <div class="column is-desktop animated bounceIn delay-2s faster">
                     <div class="about-me py-8">
 
@@ -38,22 +42,10 @@
 <style scoped>
 
     .jumbotron {
-        margin: 7% 15% 3% 15%;
+        /*margin: 7% 15% 3% 15%;*/
+        margin: 0 15%;
         background: #D3D3D3;
         border-radius: 314px;
-    }
-
-    /*.me-container {
-        margin: 2%;
-    }*/
-
-    .me-image-container {
-        position: relative;
-        height: 138px;
-        width: 138px;
-        overflow: hidden;
-        border-radius: 50%;
-        margin: 10% auto;
     }
 
     .me {
@@ -64,13 +56,8 @@
         height: auto;
     }
 
-    .text-large {
-        font-size: 2rem;
-        font-weight: 600;
-    }
-
     .about-me {
-        color: #363636;
-        line-height: 1.125;
+        /*color: #363636;*/
+        /*line-height: 1.125;*/
     }
 </style>
