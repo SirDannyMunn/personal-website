@@ -110,8 +110,8 @@ return [
     */
 
     'hosts' => [
-        '18.221.151.75' => [
-            'deploy_path' => '/home/forge/18.221.151.75',
+        'munn.pro' => [
+            'deploy_path' => '/home/forge/munn.pro',
             'user' => 'forge',
         ],
     ],
