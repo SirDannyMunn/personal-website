@@ -97,4 +97,9 @@
 
 <style scoped>
 
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #363636  ;
+        opacity: 1; /* Firefox */
+    }
+
 </style>

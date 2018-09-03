@@ -14,6 +14,7 @@
                 </h1>
                 <h1 v-show="text.partThree.visible"
                     class="text-4xl animated"
+                    data-aos="fade-up"
                     :class="text.partThree.animation">
                     Premium Web and Mobile Applications.
                 </h1>
