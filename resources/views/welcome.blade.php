@@ -3,17 +3,17 @@
 @section('page')
 
     {{--Jumbotron--}}
-    <div class="section md:m-12">
+    <section class="section is-medium md:m-12">
         <about-me></about-me>
-    </div>
+    </section>
 
-    <div class="section" id="explanationSection">
+    <section class="section is-medium" id="explanationSection">
         <seek-animation></seek-animation>
-    </div>
+    </section>
 
-    <div class="section text-center" data-aos="fade-in">
+    <section class="section is-medium text-center" data-aos="fade-in">
         <scroll-to-button title="Blog" element="blog"></scroll-to-button>
-    </div>
+    </section>
 
     @include('components.blog')
 

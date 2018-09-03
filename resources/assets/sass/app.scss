@@ -6,8 +6,6 @@
 @import "variables";
 
 // Bootstrap
-//@import '~bulma/bulma';
-
 @import "~bulma/sass/utilities/_all.sass";
 @import "~bulma/sass/elements/_all.sass";
 @import "~bulma/sass/layout/_all.sass";
@@ -27,16 +25,11 @@ $lightGrey: #C4C4C4;
 
 html {
   background-color: #323232;
-  //font-family: 'Kosugi', sans-serif;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Kosugi', sans-serif;
 }
 
 h1 {
   color: $lightGrey !important;
-}
-
-input {
-  color: black !important;
 }
 
 a {

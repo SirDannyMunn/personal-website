@@ -170,16 +170,14 @@ module.exports = {
 
   screens: {
       'sm': '320px',
-      // => @media (min-width: 576px) { ... }
 
       'md': '768px',
-      // => @media (min-width: 768px) { ... }
 
       'lg': '992px',
-      // => @media (min-width: 992px) { ... }
 
       'xl': '1200px',
-      // => @media (min-width: 1200px) { ... }
+
+      'xxl': '1900px',
   },
 
 
@@ -268,8 +266,9 @@ module.exports = {
     '3xl': '1.875rem',  // 30px
     '4xl': '2.25rem',   // 36px
     '5xl': '3rem',      // 48px
-    '6xl': '4rem',
-    '7xl': '6rem',
+    '6xl': '3.5rem',
+    '7xl': '4rem',
+    '8xl': '4.5rem',
   },
 
 

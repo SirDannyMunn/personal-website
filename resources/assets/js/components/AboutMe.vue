@@ -37,7 +37,6 @@
 <style scoped>
 
     .jumbotron {
-        /*margin: 7% 15% 3% 15%;*/
         margin: 0 15%;
         background: #D3D3D3;
         border-radius: 314px;
