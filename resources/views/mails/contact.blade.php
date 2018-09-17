@@ -1,3 +1,5 @@
-<h1>Howdy</h1>
-
-{{--<h1>{{$data}}</h1>--}}
+<h1>New {{ucfirst($data->type)}} Enquiry</h1>
+<hr>
+<h2>{{$data->name}}</h2>
+<h2>{{$data->email}}</h2>
+<p>{{$data->message}}</p>

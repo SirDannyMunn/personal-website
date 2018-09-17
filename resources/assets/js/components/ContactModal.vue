@@ -18,16 +18,20 @@
 
                 <div class="field">
                     <div class="control">
-                        <input class="input is-rounded" type="text" v-model="data.name"
+                        <input class="input is-rounded" :class="{ 'is-danger' : errors.name }"
+                               type="text" v-model="data.name"
                                placeholder="Your Name" required>
                     </div>
+                    <p class="help is-danger" v-show="errors.name">This name is invalid</p>
                 </div>
 
                 <div class="field">
                     <div class="control">
-                        <input class="input is-rounded" type="email" v-model="data.email"
+                        <input class="input is-rounded" :class="{ 'is-danger' : errors.email }"
+                               type="email" v-model="data.email"
                                placeholder="you@example.com" required>
                     </div>
+                    <p class="help is-danger" v-show="errors.email">This email is invalid</p>
                 </div>
 
                 <div class="field">
@@ -59,12 +63,17 @@
         },
         data() {
             return {
+                errors: {
+                    name: false,
+                    email: false
+                },
                 style: {
                     visible: false,
                     sending: false,
                     sent: false
                 },
                 data: {
+                    type: String,
                     name: '',
                     email: '',
                     message: ''
@@ -72,22 +81,34 @@
             }
         },
         mounted() {
-            this.$root.$on('contactMeClicked', data => {
+            this.$root.$on('contactMeClicked', type => {
                 !this.style.visible
                     ? this.style.visible = true
                     : this.style.visible = false;
+                this.data.type = !!type ? type : 'General';
             });
         },
         methods: {
             submit() {
+                if (!this.checkData()) {
+                    return;
+                }
+
                 this.style.sending=true;
 
                 this.$root.axios.post('message', this.data)
-                    .then(r => {
+                    .finally(r => {
                         this.style.sent = true;
                         this.style.sending = false;
                     })
                 ;
+            },
+            checkData() {
+                // Check fields
+                !this.data.email ? this.errors.email = true : this.errors.email = false;
+                !this.data.name ? this.errors.name = true : this.errors.name = false;
+
+                return !!this.data.email || !!this.data.name;
             }
         }
     }

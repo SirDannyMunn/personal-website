@@ -67,6 +67,7 @@ let colors = {
 
   'salmon' : '#FF7C7C',
   'brown': '#3D3D3D',
+  'cream': '#d3d3d3',
 
   'orange-darkest': '#462a16',
   'orange-darker': '#613b1f',

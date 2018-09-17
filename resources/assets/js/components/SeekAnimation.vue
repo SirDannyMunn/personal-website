@@ -34,16 +34,11 @@
                 * Observes scroll amount over specified element (animation)
                 */
 
-                console.log(entry.boundingClientRect.height);
-                console.log(entry.intersectionRect.height);
-                window.rect = entry.intersectionRect.height;
-                window.client = entry.boundingClientRect.height;
-                console.log(rect/client*100);
-                console.log((Math.floor(entry.intersectionRatio * 100)));
-
-                this.elements.forEach( e => {
-                    e.seek(e.duration * ((Math.floor(entry.intersectionRatio * 100)) / 100));
-                });
+                if (entry.boundingClientRect.top > 0) {
+                    this.elements.forEach( e => {
+                        e.seek(e.duration * ((Math.floor(entry.intersectionRatio * 100)) / 100));
+                    });
+                }
             }, options);
 
             let target = document.querySelector('#messSection');

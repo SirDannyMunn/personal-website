@@ -19,7 +19,7 @@ return [
     'driver' => env('MAIL_DRIVER', 'smtp'),
 
     'mailgun' => [
-        'domain' => 'your-mailgun-domain',
+        'domain' => 'https://api.mailgun.net/v3/munn.pro',
         'secret' => 'c1fe131e-635cb335',
     ],
 
@@ -62,8 +62,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'daniel@munn.pro'),
+        'name' => env('MAIL_FROM_NAME', 'Portfolio Website'),
     ],
 
     /*
