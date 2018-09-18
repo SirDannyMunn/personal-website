@@ -32,6 +32,7 @@ class Contact extends Mailable
     {
         return $this
             ->view('mails.contact')
+            ->subject('New Portfolio Outreach')
             ->from($this->data->email);
     }
 }

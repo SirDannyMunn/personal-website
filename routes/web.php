@@ -16,15 +16,11 @@ Route::get('/', function () {
 });
 
 Route::get('mywork', function () {
-    return response()->json([
-        'coming' => 'soon!'
-    ]);
+    return 'Coming Soon!';
 });
 
 Route::get('hire-me', function () {
-    return response()->json([
-        'coming' => 'soon!'
-    ]);
+    return 'Coming Soon!';
 });
 
 Route::post('message', function(\Illuminate\Http\Request $request) {

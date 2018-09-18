@@ -8,7 +8,7 @@
     </section>
 
     <section class="section is-medium" >
-        <seek-animation>
+         <seek-animation>
             <div class="xl:w-1/2 sm:w-full sm:p-12" slot="text">
                 <h1
                         data-aos="fade-up"
@@ -45,27 +45,27 @@
         </seek-animation>
     </section>
 
-    <section class="section is-medium">
-        <div class="flex flex-wrap text-center items-center">
-            <div class="xl:w-1/2 sm:w-full">@include('svgs.robot_head')</div>
-            <div class="xl:w-1/2 sm:w-full sm:p-12">
-                <h1 class="
-                    xxl:text-8xl lg:text-6xl md:text-5xl sm:text-3xl">
-                    Automate the boring stuff.
-                </h1>
-                <h1 data-aos="fadeInRight"
-                        class="xxl:text-4xl lg:text-3xl md:text-2xl sm:text-sm">
-                    Give your business digital steroids.
-                </h1>
-                @include('elements.contact_button',
-                ['text' => 'Get in touch',
-                 'text_size' => 'text-3xl',
-                 'class' => 'animated fadeIn slower my-4',
-                 'type' => 'general',
-                 'aos' => true])
-            </div>
-        </div>
-    </section>
+    {{--<section class="section is-medium">--}}
+        {{--<div class="flex flex-wrap text-center items-center">--}}
+            {{--<div class="xl:w-1/2 sm:w-full">@include('svgs.robot_head')</div>--}}
+            {{--<div class="xl:w-1/2 sm:w-full sm:p-12">--}}
+                {{--<h1 class="--}}
+                    {{--xxl:text-8xl lg:text-6xl md:text-5xl sm:text-3xl">--}}
+                    {{--Automate the boring stuff.--}}
+                {{--</h1>--}}
+                {{--<h1 data-aos="fadeInRight"--}}
+                        {{--class="xxl:text-4xl lg:text-3xl md:text-2xl sm:text-sm">--}}
+                    {{--Give your business digital steroids.--}}
+                {{--</h1>--}}
+                {{--@include('elements.contact_button',--}}
+                {{--['text' => 'Get in touch',--}}
+                 {{--'text_size' => 'text-3xl',--}}
+                 {{--'class' => 'animated fadeIn slower my-4',--}}
+                 {{--'type' => 'general',--}}
+                 {{--'aos' => true])--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</section>--}}
 
     {{--<section class="section is-medium">
         <div class="flex flex-wrap text-center items-center">
