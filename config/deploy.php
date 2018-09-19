@@ -43,7 +43,7 @@ return [
     |
     */
 
-    'hooks' => [
+        'hooks' => [
         // Right before we start deploying.
         'start' => [
 

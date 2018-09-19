@@ -25,15 +25,15 @@
 
             let options = {
                 root: null,
-                rootMargin: '-100px',
+                // root: document.body,
                 threshold: Array(100).fill().map((e,i)=>i/100)
             };
 
-            let observer = new IntersectionObserver(([entry]) => {
+            let observer = new IntersectionObserver(([entry], observer) => {
                 /*
                 * Observes scroll amount over specified element (animation)
                 */
-
+                
                 if (entry.boundingClientRect.top > 0) {
                     this.elements.forEach( e => {
                         e.seek(e.duration * ((Math.floor(entry.intersectionRatio * 100)) / 100));
@@ -41,7 +41,7 @@
                 }
             }, options);
 
-            let target = document.querySelector('#messSection');
+            let target = document.querySelector('#messAnimation');
             observer.observe(target);
         },
         methods: {

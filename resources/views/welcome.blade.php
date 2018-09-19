@@ -7,7 +7,7 @@
         <about-me></about-me>
     </section>
 
-    <section class="section is-medium" >
+    <section class="section is-medium" id="messSection">
          <seek-animation>
             <div class="xl:w-1/2 sm:w-full sm:p-12" slot="text">
                 <h1
@@ -30,7 +30,7 @@
                 </h1>
                 @include('elements.contact_button',
                 ['text' => 'Get in touch',
-                 'text_size' => 'text-3xl',
+                 'text_size' => 'md:text-3xl sm:text-sm',
                  'class' => 'animated fadeIn slower my-4',
                  'type' => 'general',
                  'aos' => true])
@@ -38,7 +38,7 @@
             <div class="
             xl:w-1/2 sm:w-full m-auto" slot="animation" id="animation">
                 <!--lg:p-12-->
-                <div id="messSection" class="md:max-w-md m-auto">
+                <div id="messAnimation" class="md:max-w-md m-auto">
                     @include('svgs.mess')
                 </div>
             </div>
