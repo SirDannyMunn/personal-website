@@ -2,7 +2,7 @@
     <div class="navbar-brand h-full">
         @include('elements.contact_button',
         ['text' => 'Hire me now',
-         'class' => 'navbar-item my-auto mx-8',
+         'class' => 'navbar-item my-auto mx-8 md:text-2xl sm:text-sm',
           'type' => 'hire'])
 
         <a role="button" class="navbar-burger w-1/4 text-grey-light my-auto" @click="!burgerOpen?burgerOpen=true:burgerOpen=false" aria-label="menu" aria-expanded="false">

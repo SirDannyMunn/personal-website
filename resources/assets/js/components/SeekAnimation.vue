@@ -33,7 +33,7 @@
                 /*
                 * Observes scroll amount over specified element (animation)
                 */
-                
+
                 if (entry.boundingClientRect.top > 0) {
                     this.elements.forEach( e => {
                         e.seek(e.duration * ((Math.floor(entry.intersectionRatio * 100)) / 100));

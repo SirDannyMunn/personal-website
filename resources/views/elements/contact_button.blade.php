@@ -1,7 +1,7 @@
 <a
         @if(isset($aos))data-aos="fade-up"@endif
 
-        class="button is-large is-red p-12 {{$class}}"
+        class="button is-red p-12 {{$class}}"
 
         @click="$emit('contactMeClicked', '{{$type}}')">
 
