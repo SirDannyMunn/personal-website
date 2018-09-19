@@ -9,7 +9,6 @@ let PurgecssPlugin = require("purgecss-webpack-plugin");
 /* Compilation configurations */
 
 mix.options({
-    // uglify: true,
     postCss: [tailwindcss("./tailwind.js")]
 });
 

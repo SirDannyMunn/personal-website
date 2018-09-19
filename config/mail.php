@@ -19,8 +19,8 @@ return [
     'driver' => env('MAIL_DRIVER', 'smtp'),
 
     'mailgun' => [
-        'domain' => 'https://api.mailgun.net/v3/munn.pro',
-        'secret' => 'c1fe131e-635cb335',
+        'domain' => env('API_BASE_URL'),
+        'secret' => env('MAILGUN_SECRET'),
     ],
 
 
