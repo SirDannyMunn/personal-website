@@ -15,6 +15,7 @@
     <!-- Styles -->
     <link href="{{mix('css/app.css')}}" rel="stylesheet">
     <link href="{{mix('css/vendor.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
 <div id="app">
@@ -29,43 +30,12 @@
 
             <!-- Hero content: will be in the middle -->
             <div class="hero-body">
-                <div class="container has-text-centered">
-                    <seek-animation>
-                        {{--<div class="xl:w-1/2 sm:w-full sm:p-12" slot="text">--}}
-                        {{--<h1--}}
-                        {{--data-aos="fade-up"--}}
-
-                        {{--class="--}}
-                        {{--xxl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl">--}}
-                        {{--<span>--}}
-                        {{--Complex Problems, <br>--}}
-                        {{--</span><span>--}}
-                        {{--Simple Solutions.--}}
-                        {{--</span>--}}
-                        {{--</h1>--}}
-                        {{--<h1--}}
-                        {{--data-aos="fade-up"--}}
-
-                        {{--class="animated fadeIn slower--}}
-                        {{--lg:text-xl md:text-lg sm:text-sm">--}}
-                        {{--Custom Web and Mobile Applications.--}}
-                        {{--</h1>--}}
-                        {{--@include('elements.contact_button',--}}
-                        {{--['text' => 'Get in touch',--}}
-                        {{--'text_size' => 'md:text-3xl sm:text-sm',--}}
-                        {{--'class' => 'animated fadeIn slower my-4',--}}
-                        {{--'type' => 'general',--}}
-                        {{--'aos' => true])--}}
-                        {{--</div>--}}
-                        <div class="xl:w-1/2 sm:w-full m-auto" slot="animation" id="animation">
-                            <!--lg:p-12-->
-                            <div id="messAnimation" class="md:max-w-md m-auto">
-                                @include('svgs.mess')
-                            </div>
-                        </div>
-                    </seek-animation>
-                    <about-me></about-me>
-                </div>
+                <section class="section">
+                    <seek-animation></seek-animation>
+                    <div class="container has-text-centered">
+                        <about-me></about-me>
+                    </div>
+                </section>
             </div>
         </section>
 

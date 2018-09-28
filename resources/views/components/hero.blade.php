@@ -9,7 +9,25 @@
                         <span></span>
                     </span>
             </div>
-            <div id="navbarMenuHeroA" class="navbar-menu" :class="{'is-active' : burgerOpen}">
+            <div id="navbarMenuHeroA" class="navbar-menu px-12" :class="{'is-active' : burgerOpen}">
+                <div class="navbar-start">
+                    <div class="navbar-item">
+                        <a href="https://github.com/danthemun">
+                            <i class="fab fa-github fa-3x"></i>
+                        </a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="https://twitter.com/daniel_the_munn">
+                            <i class="fab fa-twitter fa-3x"></i>
+                        </a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="https://www.linkedin.com/in/daniel-munn-109281159/">
+                            <i class="fab fa-linkedin-in fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+
                 <div class="navbar-end">
                     <a class="navbar-item">
                         Home
@@ -17,17 +35,9 @@
                     <a class="navbar-item">
                         Examples
                     </a>
-                    <a class="navbar-item">
-                        Documentation
+                    <a class="navbar-item" @click="$emit('contactMeClicked', 'hire')">
+                        Hire Me
                     </a>
-                    <span class="navbar-item">
-                            <a class="button is-primary is-inverted">
-                                <span class="icon">
-                                   <i class="fab fa-github"></i>
-                                </span>
-                                <span>Download</span>
-                            </a>
-                        </span>
                 </div>
             </div>
         </div>
