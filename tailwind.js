@@ -45,7 +45,8 @@ View the full documentation at https://tailwindcss.com.
 
 let colors = {
   'transparent': 'transparent',
-  'black': '#22292f',
+  // 'black': '#22292f',
+  'black': '#363636',
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',
   'grey-dark': '#8795a1',
@@ -77,11 +78,20 @@ let colors = {
   'orange-lighter': '#fcd9b6',
   'orange-lightest': '#fff5eb',
 
-  'yellow-darkest': '#453411',
+  'blue-darkest': '#12283a',
+  'blue-darker': '#1c3d5a',
+  'blue-dark': '#2779bd',
+  'blue-light': '#6cb2eb',
+  'blue-lighter': '#bcdefa',
+  'blue-lightest': '#eff8ff',
+
+  'blue': '#3490dc',
+  'yellow-light': '#fff382',
+
+    'yellow-darkest': '#453411',
   'yellow-darker': '#684f1d',
   'yellow-dark': '#f2d024',
   'yellow': '#ffed4a',
-  'yellow-light': '#fff382',
   'yellow-lighter': '#fff9c2',
   'yellow-lightest': '#fcfbeb',
 
@@ -100,14 +110,6 @@ let colors = {
   'teal-light': '#64d5ca',
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
-
-  'blue-darkest': '#12283a',
-  'blue-darker': '#1c3d5a',
-  'blue-dark': '#2779bd',
-  'blue': '#3490dc',
-  'blue-light': '#6cb2eb',
-  'blue-lighter': '#bcdefa',
-  'blue-lightest': '#eff8ff',
 
   'indigo-darkest': '#191e38',
   'indigo-darker': '#2f365f',

@@ -19,14 +19,20 @@
 <body>
 <div id="app">
 
-    @include('components.navbar')
+{{--    @include('components.navbar')--}}
 
     <contact-modal animation="animated fast bounceInLeft" out="bounceOutLeft"></contact-modal>
 
-    <main>
-        @yield('page')
+    @include('components.hero')
 
-{{--        @include('sections.blog')--}}
+    <main>
+        {{--@yield('page')--}}
+
+        <section class="section">
+            <div class="container">
+                @include('components.tile')
+            </div>
+        </section>
     </main>
 </div>
 </body>

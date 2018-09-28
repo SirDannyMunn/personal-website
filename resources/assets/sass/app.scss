@@ -23,17 +23,17 @@ $lightGrey: #C4C4C4;
   background: yellow;
 }
 
-html {
+#app {
   background-color: #323232;
   font-family: 'Kosugi', sans-serif;
 }
 
 h1 {
-  color: $lightGrey !important;
+  //color: $lightGrey !important;
 }
 
 a {
-  color: $black;
+  //color: $black;
 }
 a:hover {
   cursor: pointer;
