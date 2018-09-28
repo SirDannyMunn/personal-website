@@ -2,7 +2,7 @@
 
 namespace Deployer;
 
-task('build', '
+task('run:build', '
     yarn;
     npm run prod;
 ');

@@ -1,10 +1,6 @@
 <?php
 
 return [
-    
-    'include' => [
-        'recipe/deployment_tasks.php',
-    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +52,12 @@ return [
         // Code and composer vendors are ready but nothing is built.
         'build' => [
         ],
-        
+
+
+//        'include' => [
+//            'recipe/deployment_tasks.php',
+//        ],
+
         // Deployment is done but not live yet (before symlink)
         'ready' => [
             'artisan:storage:link',
@@ -65,7 +66,8 @@ return [
             'artisan:config:cache',
             'artisan:optimize',
             'artisan:migrate',
-            'build'
+//            'npm:development'
+//            'run:build'
         ],
         
         // Deployment is done and live
