@@ -21,19 +21,22 @@
 <div id="app">
     <contact-modal animation="animated fast bounceInLeft" out="bounceOutLeft"></contact-modal>
 
-    <main class="bg-yellow-light">
+    <main class="bg-white">
 
         {{-- Hero --}}
         <section class="hero is-fullheight">
 
-            @include('components.hero')
+            @include('components.nav')
 
             <!-- Hero content: will be in the middle -->
             <div class="hero-body">
-                <section class="section">
-                    <seek-animation></seek-animation>
+                <section class="section mx-auto">
+                    @include('svgs.logo')
+
+                    {{--<seek-animation></seek-animation>--}}
                     <div class="container has-text-centered">
-                        <about-me></about-me>
+                        <about-me>
+                        </about-me>
                     </div>
                 </section>
             </div>
@@ -41,13 +44,16 @@
 
         <section class="section">
             <div class="container is-fluid ">
-                @include('components.tile')
+                @include('components.tile_ancestor')
             </div>
         </section>
 
         <section class="section bg-black" style="margin-top: -16rem; padding-top: 16rem;">
 
+            Tools of choice
 
+        Rock, hammer, tools
+        Unleash me on your problems.
 
         </section>
 

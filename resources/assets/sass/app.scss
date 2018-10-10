@@ -27,46 +27,43 @@ $lightGrey: #C4C4C4;
   background-color: #323232;
   font-family: 'Kosugi', sans-serif;
 }
-
-h1 {
-  //color: $lightGrey !important;
+.navbar-item {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 hr {
   padding: 2rem 1rem;
   color: #363636;
 }
-
 a {
   color: unset;
 }
 a:hover {
   cursor: pointer;
 }
-
-.navbar {
-  //height: 154px;
+a.navbar-item:hover {
+  background-color: unset;
+  color: unset;
 }
+
 .is-red {
   background: $red;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 168px;
   border: $red;
 }
-
 .is-red:hover {
   background: rgba(0,0,0,0);
   border: 1px solid $red;
   color: $lightGrey;
 }
-
 .hover-underline:hover {
   text-decoration: underline;
 }
 
-a.navbar-item:hover {
-  background-color: $darkGrey;
-  color: $lightGrey;
+.is-bordered {
+  border: grey solid 2px;
 }
 
 @tailwind components;
