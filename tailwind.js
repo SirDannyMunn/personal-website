@@ -46,7 +46,6 @@ View the full documentation at https://tailwindcss.com.
 let colors = {
   'transparent': 'transparent',
   // 'black': '#22292f',
-  'black': '#363636',
   'grey-darker': '#606f7b',
   'grey-dark': '#8795a1',
   'grey': '#b8c2cc',
@@ -55,6 +54,8 @@ let colors = {
   'grey-lightest': '#f8fafc',
   'grey-lighter': '#f1f5f8',
 
+  'black': '#363636',
+  'silver': '#cecece',
 
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',
@@ -458,7 +459,8 @@ module.exports = {
     'sm': '.125rem',
     default: '.25rem',
     'lg': '.5rem',
-    'full': '200px',
+    // 'full': '200px',
+    'full': '260px',
   },
 
 
@@ -767,7 +769,10 @@ module.exports = {
   shadows: {
     default: '0 2px 4px 0 rgba(0,0,0,0.10)',
     'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
-    'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
+
+    // 'lg': '0px 2px 20px 12px rgba(0, 0, 0, .11), 0px 0px 15px 0 rgba(0, 0, 0, .08);',
+    'lg': '4px 8px 20px 8px rgba(0, 0, 0, .11), 0px 0px 15px 0 rgba(0, 0, 0, .08);',
+    // 'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
     'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
     'outline': '0 0 0 3px rgba(52,144,220,0.5)',
     'none': 'none',

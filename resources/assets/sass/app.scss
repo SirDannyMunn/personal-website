@@ -23,7 +23,14 @@ $lightGrey: #C4C4C4;
   background: yellow;
 }
 
+#land {
+  background: url("../../views/svgs/background/grey/end.svg");
+  background-size: cover;
+  //padding-bottom: 500px;
+}
+
 #app {
+  overflow-x: hidden;
   background-color: #323232;
   font-family: 'Kosugi', sans-serif;
 }
@@ -63,7 +70,7 @@ a.navbar-item:hover {
 }
 
 .is-bordered {
-  border: grey solid 2px;
+  //border: #363636 solid 2px;
 }
 
 @tailwind components;

@@ -1,10 +1,10 @@
 <template>
-    <div class="jumbotron p-12 animated bounceInLeft slow bg-white shadow-lg mx-15% is-bordered">
+    <div class="jumbotron p-12 animated bounceInLeft slow bg-white shadow-lg md:mx-15% is-bordered">
         <!--<slot name="logo"></slot>-->
 
         <div class="flex flex-wrap">
             <!--Image-->
-            <div class="lg:w-1/4 md:w-full flex content-center">
+            <div class="lg:w-1/4 md:w-full flex mx-auto content-center">
                 <div class="rounded-full image is-128x128 is-rounded overflow-hidden
                  m-auto
                 animated bounceIn delay-1s faster">
@@ -21,7 +21,7 @@
 
                     <p class="xl:text-3xl lg:text-2xl md:text-xl py-2">
                         Web & mobile application developer also with experience in design and data science. Open to contract work for development data science and technology consultancy.
-                        <strong><u><a class="hover:text-blue-lighter" @click="$root.$emit('contactMeClicked', 'general')">Get in touch</a></u></strong>
+                        <strong><u><a class="button hover:text-blue-lighter" @click="$root.$emit('contactMeClicked', 'general')">Get in touch</a></u></strong>
                     </p>
                 </div>
             </div>

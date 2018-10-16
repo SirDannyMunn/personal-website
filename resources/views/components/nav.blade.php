@@ -1,6 +1,6 @@
 <!-- Hero head: will stick at the top -->
 <div class="hero-head">
-    <nav class="navbar h-32">
+    <nav class="navbar">
         <div class="container">
             <div class="navbar-brand">
                 <span class="navbar-burger burger" @click="!burgerOpen?burgerOpen=true:burgerOpen=false">
@@ -9,7 +9,7 @@
                     <span></span>
                 </span>
             </div>
-            <div id="navbarMenuHeroA" class="navbar-menu px-12" :class="{'is-active' : burgerOpen}">
+            <div id="navbarMenuHeroA" class="navbar-menu px-16 py-4" :class="{'is-active' : burgerOpen}">
                 <div class="navbar-start">
                     <div class="navbar-item">
                         <a href="https://github.com/danthemun">
@@ -36,9 +36,9 @@
                         Examples
                     </a>
                     <a class="navbar-item">
-                        <button class="button bg-white" @click="$emit('contactMeClicked', 'hire')">
+                        {{--<button class="button bg-white" @click="$emit('contactMeClicked', 'hire')">--}}
                             Let's make
-                        </button>
+                        {{--</button>--}}
                     </a>
                 </div>
             </div>

@@ -14,7 +14,7 @@
                     ></button>
                 </p>
             </header>
-            <section class="modal-card-body p-8">
+            <section class="modal-card-body p-16">
 
                 <div class="field">
                     <div class="control">
