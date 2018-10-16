@@ -7,8 +7,8 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .tailwind()
    .purgeCss();
 
-mix.copy('node_modules/animate.css/animate.css', 'public/css/vendor.css');
-mix.copyDirectory('resources/views/svgs/background', 'public/svgs');
+// mix.copy('node_modules/animate.css/animate.css', 'public/css/vendor.css');
+// mix.copyDirectory('resources/views/svgs/background', 'public/svgs');
 
 mix.browserSync('portfolio.test:8000');
 

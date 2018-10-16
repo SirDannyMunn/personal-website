@@ -24,9 +24,23 @@ $lightGrey: #C4C4C4;
 }
 
 #land {
-  background: url("../../views/svgs/background/grey/end.svg");
+  background: url("/svgs/grey/end.svg");
   background-size: cover;
   //padding-bottom: 500px;
+}
+
+footer.footer:before{
+  //background: transparent url(/svgs/footer-chart.svg) no-repeat scroll 0 bottom/100% auto;
+  //content: "";
+  //height: 340px;
+  //width: 1600px;
+  //width: 100%;
+  //position: absolute;
+  //bottom: 0;
+  //bottom: -1px;
+  //left: -1px;
+  //right: -1px;
+  //z-index: 0 !important;
 }
 
 #app {

@@ -24,130 +24,130 @@
 
     {{--<slash></slash>--}}
 
-    <main class="bg-white">
+    <main class="bg-white" id="land">
+        <div class="container">
+            {{-- Hero --}}
+            <section class="hero is-fullheight">
 
-        {{-- Hero --}}
-        <section class="hero is-fullheight" id="land">
+                @include('components.nav')
 
-            @include('components.nav')
+                <!-- Hero content: will be in the middle -->
+                <div class="hero-body mb-24">
 
-            <!-- Hero content: will be in the middle -->
-            <div class="hero-body mb-24">
+                    <section class="section m-auto pb-24">
 
-                <section class="section m-auto pb-24">
-
-                    <div class="sm:w-full md:mx-16 md:w-3/4 lg:w-1/3 xxl:w-1/4 lg:mx-15% py-20">
-                        @include('svgs.logo')
-                    </div>
-
-                    <div class="container has-text-centered">
-                        <about-me></about-me>
-                    </div>
-                </section>
-            </div>
-        </section>
-
-        {{--<div class="section text-center">
-            <scroll-to-button></scroll-to-button>
-        </div>--}}
-
-        <section class="section">
-            <div class="container is-fluid ">
-                @tile_ancestor
-                    @slot('part_one')
-                        <h1 class="title is-1">Software.</h1>
-                        <h1 class="subtitle">Developing technology for the present.</h1>
-                        <div class="flex flex-wrap">
-                            @box(['colour' => 'bg-green-light '])
-                                @slot('title')Software for business.@endslot
-                            @endbox
-                            @box(['colour' => 'bg-blue-light '])
-                                @slot('title')Design for humans.@endslot
-                            @endbox
-                            @box(['colour' => 'bg-yellow-light '])
-                                @slot('title')Experience for customers.@endslot
-                            @endbox
+                        <div class="sm:w-full md:mx-16 md:w-3/4 lg:w-1/3 xxl:w-1/4 lg:mx-15% py-20">
+                            @include('svgs.logo')
                         </div>
-                    @endslot
-                    @slot('part_two')
-                        <hr>
-                        <div class="flex flex-wrap">
-                            <div class="flex-1 mx-2 px-4">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <figure class="image is-4by3">
-                                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                                        </figure>
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <figure class="image is-48x48">
-                                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                                </figure>
+
+                        <div class="container has-text-centered">
+                            <about-me></about-me>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            {{--<div class="section text-center">
+                <scroll-to-button></scroll-to-button>
+            </div>--}}
+
+            <section class="section">
+                <div class="container is-fluid ">
+                    @tile_ancestor
+                        @slot('part_one')
+                            <h1 class="title is-1">Software.</h1>
+                            <h1 class="subtitle">Developing technology for the present.</h1>
+                            <div class="flex flex-wrap">
+                                @box(['colour' => 'bg-green-light '])
+                                    @slot('title')Software for business.@endslot
+                                @endbox
+                                @box(['colour' => 'bg-blue-light '])
+                                    @slot('title')Design for humans.@endslot
+                                @endbox
+                                @box(['colour' => 'bg-yellow-light '])
+                                    @slot('title')Experience for customers.@endslot
+                                @endbox
+                            </div>
+                        @endslot
+                        @slot('part_two')
+                            <hr>
+                            <div class="flex flex-wrap">
+                                <div class="flex-1 mx-2 px-4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <figure class="image is-4by3">
+                                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <figure class="image is-48x48">
+                                                        <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                                    </figure>
+                                                </div>
+                                                <div class="media-content">
+                                                    <p class="title is-4">Mark Woodward</p>
+                                                    <p class="subtitle is-6">@printedcupcompany</p>
+                                                </div>
                                             </div>
-                                            <div class="media-content">
-                                                <p class="title is-4">Mark Woodward</p>
-                                                <p class="subtitle is-6">@printedcupcompany</p>
+
+                                            <div class="content">
+                                                Daniel's work is great and very delighted to have worked with him. <a>@bulmaio</a>.
+                                                <a href="#">#css</a> <a href="#">#responsive</a>
+                                                <br>
+                                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="flex-1 mx-2 px-4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <figure class="image is-4by3">
+                                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <figure class="image is-48x48">
+                                                        <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                                    </figure>
+                                                </div>
+                                                <div class="media-content">
+                                                    <p class="title is-4">John Smith</p>
+                                                    <p class="subtitle is-6">@johnsmith</p>
+                                                </div>
+                                            </div>
 
-                                        <div class="content">
-                                            Daniel's work is great and very delighted to have worked with him. <a>@bulmaio</a>.
-                                            <a href="#">#css</a> <a href="#">#responsive</a>
-                                            <br>
-                                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                            <div class="content">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                                <a href="#">#css</a> <a href="#">#responsive</a>
+                                                <br>
+                                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex-1 mx-2 px-4">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <figure class="image is-4by3">
-                                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                                        </figure>
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <figure class="image is-48x48">
-                                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                                </figure>
-                                            </div>
-                                            <div class="media-content">
-                                                <p class="title is-4">John Smith</p>
-                                                <p class="subtitle is-6">@johnsmith</p>
-                                            </div>
-                                        </div>
+                        @endslot
+                        @slot('part_three')
+                            <hr>
+                            <div class="flex">
 
-                                        <div class="content">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                            <a href="#">#css</a> <a href="#">#responsive</a>
-                                            <br>
-                                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                                        </div>
-                                    </div>
-                                </div>
+                                Tools of choice
+
+                                Rock, hammer, tools
+                                Unleash me on your problems.
                             </div>
-                        </div>
-                    @endslot
-                    @slot('part_three')
-                        <hr>
-                        <div class="flex">
+                        @endslot
+                    @endtile_ancestor
+                </div>
+            </section>
 
-                            Tools of choice
-
-                            Rock, hammer, tools
-                            Unleash me on your problems.
-                        </div>
-                    @endslot
-                @endtile_ancestor
-            </div>
-        </section>
-
-        <section class="section bg-black" style="margin-top: -35rem; padding-top: 35rem;">
+            <section class="section bg-black" style="margin-top: -35rem; padding-top: 35rem;">
             <div class="container is-fluid">
                 @tile_ancestor
                     @slot('part_one')
@@ -156,19 +156,20 @@
                 @endtile_ancestor
             </div>
         </section>
-
-        <footer class="footer bg-black">
-            <div class="container is-fluid">
-                <div class="content text-center text-grey-light">
-                    <p>
-                        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-                        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-                    </p>
-                </div>
-            </div>
-        </footer>
+        </div>
     </main>
+
+    <footer class="footer bg-black">
+        <div class="container is-fluid">
+            <div class="content text-center text-grey-light">
+                <p>
+                    <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                    is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
 </div>
 </body>
 <script src="{{mix('js/app.js')}}"></script>
