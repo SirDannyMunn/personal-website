@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property='og:title' content='Daniel Munn'>
+    <meta property='og:image' content='//{{url('images/logo_brain.png')}}'>
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta property='og:description' content=''>
+    <meta property='og:url' content='//www.munn.pro"'>
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -15,8 +21,9 @@
     <!-- Styles -->
     <link href="{{mix('css/app.css')}}" rel="stylesheet">
     <link rel="icon" href="{{url('/images/logo_brain.png')}}">
-    @stack('styles-bottom')
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    @stack('styles-bottom')
 </head>
 <body>
 <div id="app">
@@ -26,12 +33,69 @@
     <contact-modal animation="animated fast bounceInLeft" out="bounceOutLeft"></contact-modal>
 
     <main>
+
+        <social-sharing url="https://vuejs.org/"
+                        title="The Progressive JavaScript Framework"
+                        description="Intuitive, Fast and Composable MVVM for building interactive interfaces."
+                        quote="Vue is a progressive framework for building user interfaces."
+                        hashtags="vuejs,javascript,framework"
+                        twitter-user="vuejs"
+                        inline-template>
+            <div>
+                <network network="email">
+                    <i class="fa fa-envelope"></i> Email
+                </network>
+                <network network="facebook">
+                    <i class="fa fa-facebook"></i> Facebook
+                </network>
+                <network network="googleplus">
+                    <i class="fa fa-google-plus"></i> Google +
+                </network>
+                <network network="line">
+                    <i class="fa fa-line"></i> Line
+                </network>
+                <network network="linkedin">
+                    <i class="fa fa-linkedin"></i> LinkedIn
+                </network>
+                <network network="odnoklassniki">
+                    <i class="fa fa-odnoklassniki"></i> Odnoklassniki
+                </network>
+                <network network="pinterest">
+                    <i class="fa fa-pinterest"></i> Pinterest
+                </network>
+                <network network="reddit">
+                    <i class="fa fa-reddit"></i> Reddit
+                </network>
+                <network network="skype">
+                    <i class="fa fa-skype"></i> Skype
+                </network>
+                <network network="sms">
+                    <i class="fa fa-commenting-o"></i> SMS
+                </network>
+                <network network="telegram">
+                    <i class="fa fa-telegram"></i> Telegram
+                </network>
+                <network network="twitter">
+                    <i class="fa fa-twitter"></i> Twitter
+                </network>
+                <network network="vk">
+                    <i class="fa fa-vk"></i> VKontakte
+                </network>
+                <network network="weibo">
+                    <i class="fa fa-weibo"></i> Weibo
+                </network>
+                <network network="whatsapp">
+                    <i class="fa fa-whatsapp"></i> Whatsapp
+                </network>
+            </div>
+        </social-sharing>
+
         {{-- Land --}}
         <section class="hero is-fullheight" id="land">
             <div class="absolute pin-t pin-l z-0 w-full" id="slant">
-                <img class="md:hidden lg:block w-full" src="{{url('images/angle_lg.png')}}" alt="">
-                <img class="sm:hidden md:block w-full" src="{{url('images/angle_md.png')}}" alt="">
-                <img class="md:hidden sm:block h-full w-full" src="{{url('images/angle_sm.png')}}" alt="">
+                <img class="lg:block hidden h-full w-full" src="{{url('images/angle_lg.png')}}">
+                {{--<img class="sm:hidden md:block w-full" src="{{url('images/angle_md.png')}}" alt="">--}}
+                <img class="sm:block hidden h-full w-full" src="{{url('images/angle_sm.png')}}">
             </div>
 
             @include('components.nav')
@@ -41,7 +105,7 @@
                     <div class="md:mb-32">
 
                         {{--Logo--}}
-                        <div class="sm:w-full md:mx-16 md:w-3/4 lg:w-1/3 xxl:w-1/3 py-16">
+                        <div class="sm:w-full md:mx-16 md:w-3/4 lg:w-1/3 xxl:w-1/3 lg:pt-16 pb-16">
                             @include('svgs.logo')
                         </div>
 
@@ -204,21 +268,17 @@
                                         <div class="media">
                                             <div class="media-left">
                                                 <figure class="image is-48x48">
-                                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                                    <img src="{{url('images/pcc_logo.jpg')}}" class="is-rounded" style="object-fit: cover">
                                                 </figure>
                                             </div>
                                             <div class="media-content">
-                                                <p class="title is-4">Nobody :(</p>
-                                                <p class="subtitle is-6">@boatymcboatface</p>
+                                                <p class="title is-4">Mark Woodward</p>
+                                                <p class="subtitle is-6"><a href="https://twitter.com/PrintedCupCo">@PrintedCupCo</a></p>
                                             </div>
                                         </div>
 
                                         <div class="content">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                            <a href="#">#css</a> <a href="#">#responsive</a>
-                                            <br>
-                                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                            Daniel has been central to automating our systems and processes at the Printed Cup Company, and has a great understanding of systems from web sites to crm and how get systems connected, a very diligent worker, willing to find new ways to do things.
                                         </div>
                                     </div>
                                 </div>
@@ -251,6 +311,9 @@
                 @endtile_ancestor
             </div>
         </section>
+
+
+
     </main>
     <footer class="footer">
         <div class="container">

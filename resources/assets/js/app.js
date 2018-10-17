@@ -15,6 +15,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 AOS.init();
 
+let SocialSharing = require('vue-social-sharing');
+Vue.use(SocialSharing);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

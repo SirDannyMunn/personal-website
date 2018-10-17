@@ -6,7 +6,7 @@
             <header class="modal-card-head text-center p-12">
                 <p class="modal-card-title">
                         👍
-                        <small class="break-words" v-if="data.type==='review'">Please leave review in the box below</small>
+                        <small class="break-words" v-if="data.type==='review'">Leave review below</small>
                         <span v-if="data.type!=='review'">Drop me a line</span>
                         <button class=" my-1 delete" aria-label="close"
                                 @click="style.visible=false"
