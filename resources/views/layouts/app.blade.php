@@ -20,12 +20,15 @@
 </head>
 <body>
 <div id="app">
+    {{--PurgeCSS Whitelist--}}
+    <input type="hidden" class="is-success" id="purgecss-whitelist">
+
     <contact-modal animation="animated fast bounceInLeft" out="bounceOutLeft"></contact-modal>
 
     <main>
         {{-- Land --}}
         <section class="hero is-fullheight" id="land">
-            <div class="absolute pin-t pin-l z-0" id="slant">
+            <div class="absolute pin-t pin-l z-0 w-full" id="slant">
                 <img class="md:hidden lg:block w-full" src="{{url('images/angle_lg.png')}}" alt="">
                 <img class="sm:hidden md:block w-full" src="{{url('images/angle_md.png')}}" alt="">
                 <img class="md:hidden sm:block h-full w-full" src="{{url('images/angle_sm.png')}}" alt="">
@@ -140,7 +143,7 @@
 
         {{--Info--}}
         <section class="section is-medium">
-            <div class="container is-fluid">
+            <div class="container">
                 @tile_ancestor
                     @slot('part_one')
                         <h1 class="title is-1">Software.</h1>
@@ -238,7 +241,7 @@
 
         {{--Contact--}}
         <section class="section">
-            <div class="container is-fluid">
+            <div class="container">
                 @tile_ancestor
                 @slot('part_one')
                     <h1 class="title is-1">Want to work together?</h1>
@@ -250,7 +253,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container is-fluid">
+        <div class="container">
             <div class="content text-center text-grey-light">
                 <p>
                     <strong>Crafted with stone and chisel</strong> by <a href="https://jgthms.com">Daniel Munn</a>.
@@ -260,8 +263,8 @@
             </div>
         </div>
     </footer>
-    <div class="" id="graph">
-        <img src="{{url('svgs/graph_lg.svg')}}" alt="">
+    <div class="w-full" id="graph">
+        <img class="w-full" src="{{url('svgs/graph_lg.svg')}}" alt="">
     </div>
 </div>
 </body>
