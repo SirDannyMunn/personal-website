@@ -95,7 +95,7 @@
                 <h3 class="text-black"><strong>Note</strong>: this site is a <strong><u>work in progress</u></strong>. If we have worked together in that past, please <strong><u><a @click="$emit('contactMeClicked', 'review')">leave me some feedback</a></u></strong> so I can fill it.</h3>
             </div>
         </section>
-        
+
         {{--Services--}}
         <section class="hero is-medium">
             <div class="hero-body">

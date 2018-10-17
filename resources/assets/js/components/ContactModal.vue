@@ -5,13 +5,12 @@
         <div class="modal-card rounded-full" :class="animation">
             <header class="modal-card-head text-center p-12">
                 <p class="modal-card-title">
-                    <span class="">
-                        👍 Drop me a line
-                    </span>
-
-                    <button class=" my-1 delete" aria-label="close"
-                            @click="style.visible=false"
-                    ></button>
+                        👍
+                        <small class="break-words" v-if="data.type==='review'">Please leave review in the box below</small>
+                        <span v-if="data.type!=='review'">Drop me a line</span>
+                        <button class=" my-1 delete" aria-label="close"
+                                @click="style.visible=false"
+                        ></button>
                 </p>
             </header>
             <section class="modal-card-body p-16">
@@ -28,7 +27,7 @@
                                type="text" v-model="data.name"
                                placeholder="Your Name" required>
                     </div>
-                    <p class="help is-danger" v-show="errors.name">This name is invalid</p>
+                    <p class="help is-danger" v-show="errors.name">Please fill in your name</p>
                 </div>
 
                 <div class="field">
@@ -37,13 +36,13 @@
                                type="email" v-model="data.email"
                                placeholder="you@example.com" required>
                     </div>
-                    <p class="help is-danger" v-show="errors.email">This email is invalid</p>
+                    <p class="help is-danger" v-show="errors.email">Please fill in your email</p>
                 </div>
 
                 <div class="field">
                     <div class="control">
                         <textarea class="textarea" v-model="data.message"
-                                  placeholder="Leave a message" ></textarea>
+                                  placeholder="Leave a message"></textarea>
                     </div>
                 </div>
 
@@ -54,7 +53,7 @@
                     </div>
                 </div>
 
-                <small>Think i could improve the website? <u><a @click="style.suggestion=!style.suggestion">
+                <small><span v-if="!style.suggestion">Think i could improve the website?</span>&nbsp;<u><a @click="style.suggestion=!style.suggestion">
                     <span v-if="!style.suggestion">Leave me some feedback</span>
                     <span v-if="style.suggestion">Hide feedback box</span>
                 </a></u>
