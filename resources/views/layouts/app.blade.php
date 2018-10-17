@@ -63,7 +63,7 @@
                                                         maker</a></strong>, also available for <strong><a
                                                             class=""
                                                             @click="$emit('contactMeClicked', 'hire')">
-                                                        hire!</a></strong>
+                                                        hire!</a></strong> <small>(blog coming soon)</small>
                                             </p>
 
                                             <p class="xl:text-2xl lg:text-xl md:text-lg py-2">
