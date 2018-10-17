@@ -14,7 +14,7 @@
 
     <!-- Styles -->
     <link href="{{mix('css/app.css')}}" rel="stylesheet">
-{{--    <link href="{{mix('css/vendor.css')}}" rel="stylesheet">--}}
+    <link rel="icon" href="{{url('/images/logo_brain.png')}}">
     @stack('styles-bottom')
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
