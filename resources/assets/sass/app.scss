@@ -1,6 +1,8 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+//@import "./../fonts/Muli";
+//@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Muli|Poppins|Quicksand');
 
 // Variables
 @import "variables";
@@ -14,6 +16,8 @@
 // Animate css
 @import '~animate.css';
 
+
+
 $red: #FF7C7C;
 $black: #363636;
 $darkGrey: #3D3D3D;
@@ -24,29 +28,14 @@ $lightGrey: #C4C4C4;
 }
 
 #land {
-  background: url("/svgs/grey/end.svg");
+  background: linear-gradient(#CDE2FB 13.91%, rgba(209, 209, 209, 0) 100%);
   background-size: cover;
-  //padding-bottom: 500px;
-}
-
-footer.footer:before{
-  //background: transparent url(/svgs/footer-chart.svg) no-repeat scroll 0 bottom/100% auto;
-  //content: "";
-  //height: 340px;
-  //width: 1600px;
-  //width: 100%;
-  //position: absolute;
-  //bottom: 0;
-  //bottom: -1px;
-  //left: -1px;
-  //right: -1px;
-  //z-index: 0 !important;
 }
 
 #app {
   overflow-x: hidden;
-  background-color: #323232;
-  font-family: 'Kosugi', sans-serif;
+  //background-color: #323232;
+  font-family: 'Muli', sans-serif;
 }
 .navbar-item {
   margin-left: 1rem;
@@ -90,4 +79,10 @@ a.navbar-item:hover {
 @tailwind components;
 @tailwind preflight;
 @tailwind utilities;
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding: 0 6rem;
+  }
+}
 

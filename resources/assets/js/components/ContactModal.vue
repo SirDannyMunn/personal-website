@@ -43,7 +43,7 @@
 
                 <div class="py-4">
                     <p class="control text-center">
-                        <button class="button is-primary" @click="submit"
+                        <button class="button bg-purple-dark text-white" @click="submit"
                            :class="{ 'is-loading' : style.sending }">
                             <span v-show="!style.sent">Send</span>
                             <span v-show="style.sent">Sent!</span>

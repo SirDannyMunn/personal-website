@@ -1,7 +1,7 @@
 <!-- Hero head: will stick at the top -->
 <div class="hero-head">
     <nav class="navbar">
-        <div class="container">
+        <div class="container mx-64 relative">
             <div class="navbar-brand">
                 <span class="navbar-burger burger" @click="!burgerOpen?burgerOpen=true:burgerOpen=false">
                     <span></span>
@@ -9,7 +9,7 @@
                     <span></span>
                 </span>
             </div>
-            <div id="navbarMenuHeroA" class="navbar-menu px-16 py-4" :class="{'is-active' : burgerOpen}">
+            <div class="navbar-menu " :class="{'is-active' : burgerOpen}">
                 <div class="navbar-start">
                     <div class="navbar-item">
                         <a href="https://github.com/danthemun">
@@ -29,6 +29,9 @@
                 </div>
 
                 <div class="navbar-end">
+                    <a class="navbar-item">
+                        Leave a review
+                    </a>
                     <a class="navbar-item">
                         Home
                     </a>
