@@ -38,7 +38,7 @@
                     <div class="md:mb-32">
 
                         {{--Logo--}}
-                        <div class="sm:w-full md:mx-16 md:w-3/4 lg:w-1/3 xxl:w-1/5 py-16">
+                        <div class="sm:w-full md:mx-16 md:w-3/4 lg:w-1/3 xxl:w-1/4 py-16">
                             @include('svgs.logo')
                         </div>
 
@@ -92,10 +92,10 @@
         {{--Leave me feedback--}}
         <section class="section text-center">
             <div class="container">
-                <span class="text-black"><strong>Note</strong>: this site is a <strong><u>work in progress</u></strong>. If we have worked together in that past, please <strong><u><a @click="$emit('contactMeClicked', 'review')">leave me some feedback</a></u></strong> so I can fill it.</span>
+                <h3 class="text-black"><strong>Note</strong>: this site is a <strong><u>work in progress</u></strong>. If we have worked together in that past, please <strong><u><a @click="$emit('contactMeClicked', 'review')">leave me some feedback</a></u></strong> so I can fill it.</h3>
             </div>
         </section>
-
+        
         {{--Services--}}
         <section class="hero is-medium">
             <div class="hero-body">
