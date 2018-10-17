@@ -189,7 +189,7 @@
                         <h1 class="subtitle">Technology for the present.</h1>
                         <div class="flex flex-wrap">
                             @box(['colour' => 'bg-green-light '])
-                                @slot('title')Progress for business.@endslot
+                                @slot('title')Productivity for business.@endslot
                             @endbox
                             @box(['colour' => 'bg-blue-light '])
                                 @slot('title')Designed for brains.@endslot
