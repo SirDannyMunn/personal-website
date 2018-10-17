@@ -41,7 +41,7 @@
                     <div class="md:mb-32">
 
                         {{--Logo--}}
-                        <div class="sm:w-full md:mx-16 md:w-3/4 lg:w-1/3 xxl:w-1/4 py-16">
+                        <div class="sm:w-full md:mx-16 md:w-3/4 lg:w-1/3 xxl:w-1/3 py-16">
                             @include('svgs.logo')
                         </div>
 
@@ -259,7 +259,7 @@
                     <strong>Crafted with stone and chisel</strong> by <a href="https://jgthms.com">Daniel Munn</a>.
                     {{--<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content--}}
                     {{--is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.--}}
-                </p>
+                </p>2
             </div>
         </div>
     </footer>
