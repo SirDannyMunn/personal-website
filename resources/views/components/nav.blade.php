@@ -1,7 +1,7 @@
 <!-- Hero head: will stick at the top -->
 <div class="hero-head">
     <nav class="navbar shadow-md pb-4">
-        <div class="container p-0">
+        <div class="container">
             <div class="navbar-brand">
                 <span class="navbar-burger burger" @click="!burgerOpen?burgerOpen=true:burgerOpen=false">
                     <span></span>
