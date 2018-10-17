@@ -26,9 +26,9 @@
         {{-- Land --}}
         <section class="hero is-fullheight" id="land">
             <div class="absolute pin-t pin-l z-0" id="slant">
-                <img class="md:hidden lg:block w-ful;" src="{{url('images/angle_lg.png')}}" alt="">
+                <img class="md:hidden lg:block w-full" src="{{url('images/angle_lg.png')}}" alt="">
                 <img class="sm:hidden md:block w-full" src="{{url('images/angle_md.png')}}" alt="">
-                <img class="md:hidden sm:block w-full" src="{{url('images/angle_sm.png')}}" alt="">
+                <img class="md:hidden sm:block h-full w-full" src="{{url('images/angle_sm.png')}}" alt="">
             </div>
 
             @include('components.nav')
@@ -39,13 +39,13 @@
                     <div class="md:mb-32">
 
                         {{--Logo--}}
-                        <div class="sm:w-full md:mx-16 md:w-3/4 lg:w-1/3 xxl:w-1/5 lg:mx-15% py-16">
+                        <div class="sm:w-full md:mx-16 md:w-3/4 lg:w-1/3 xxl:w-1/5 py-16">
                             @include('svgs.logo')
                         </div>
 
                         {{--About Me--}}
                         <div class="has-text-centered">
-                            <div class="p-8 animated bounceInLeft slow bg-white shadow-lg md:mx-15% is-bordered" style="border-radius: 314px">
+                            <div class="p-8 animated bounceInLeft slow bg-white shadow-lg is-bordered" style="border-radius: 314px">
                                 <div class="flex flex-wrap">
                                     <!--Image-->
                                     <div class="lg:w-1/4 md:w-full flex mx-auto content-center">
@@ -96,7 +96,7 @@
         </section>
 
         {{--Services--}}
-        <section class="hero is-large">
+        <section class="hero is-medium">
             <div class="hero-body">
                 <div class="container text-center">
                     <h1 class="title">
@@ -138,8 +138,8 @@
         </section>
 
         {{--Info--}}
-        <section class="section is-large">
-            <div class="container is-fluid ">
+        <section class="section is-medium">
+            <div class="container is-fluid">
                 @tile_ancestor
                     @slot('part_one')
                         <h1 class="title is-1">Software.</h1>
@@ -234,6 +234,20 @@
             </div>
         </section>
 
+        {{--Contact--}}
+        <section class="section">
+            <div class="container is-fluid">
+                @tile_ancestor
+                @slot('part_one')
+                    <h1 class="title is-1">Want to work together?</h1>
+                    {{--<h1 class="subtitle"></h1>--}}
+                    <button class="button is-rounded border-purple-dark hover:bg-purple-dark hover:text-white border-2">Get in touch</button>
+                @endslot
+                @endtile_ancestor
+            </div>
+        </section>
+
+
         {{--<section class="section bg-black" style="margin-top: -35rem; padding-top: 35rem;">--}}
             {{--<div class="container is-fluid">--}}
                 {{--@tile_ancestor--}}
@@ -258,7 +272,6 @@
     <div class="" id="graph">
         <img src="{{url('svgs/graph_lg.svg')}}" alt="">
     </div>
-
 </div>
 </body>
 <script src="{{mix('js/app.js')}}"></script>

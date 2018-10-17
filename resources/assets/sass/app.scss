@@ -33,7 +33,7 @@ $lightGrey: #C4C4C4;
 }
 
 #app {
-  overflow-x: hidden;
+  overflow: hidden;
   //background-color: #323232;
   font-family: 'Muli', sans-serif;
 }
@@ -76,13 +76,17 @@ a.navbar-item:hover {
   //border: #363636 solid 2px;
 }
 
+.hero-body {
+  overflow: hidden
+}
+
 @tailwind components;
 @tailwind preflight;
 @tailwind utilities;
 
 @media only screen and (min-width: 1024px) {
   .container {
-    padding: 0 6rem;
+    padding: 0 18rem;
   }
 }
 

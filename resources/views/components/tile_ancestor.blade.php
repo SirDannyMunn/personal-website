@@ -1,4 +1,4 @@
-<div class="tile is-ancestor bg-white box shadow-lg xl:mx-15% is-bordered">
+<div class="tile is-ancestor bg-white box shadow-lg is-bordered">
     <div class="tile is-parent notification bg-white">
         <div class="is-child text-center">
             @if(isset($part_one)){{ $part_one }}@endif
