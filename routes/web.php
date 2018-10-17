@@ -25,8 +25,15 @@ Route::get('hire-me', function () {
 
 Route::post('message', function(\Illuminate\Http\Request $request) {
 
-    \Illuminate\Support\Facades\Mail::to('dannymunn1995@gmail.com')
-                                  ->send(new \App\Mail\Contact(request()));
+    \Illuminate\Support\Facades\Log::info(request());
+
+    try {
+        \Illuminate\Support\Facades\Mail::to('dannymunn1995@gmail.com')
+                                      ->send(new \App\Mail\Contact(request()));
+        return response('success', 201);
+    } catch (Exception $e) {
+        return response('error', 500);
+    }
 
     return response(request(), 201);
 });

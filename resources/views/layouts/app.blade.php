@@ -33,7 +33,6 @@
 
             @include('components.nav')
 
-            <!-- Hero content: will be in the middle -->
             <div class="hero-body z-10">
                 <div class="container">
                     <div class="md:mb-32">
@@ -60,17 +59,17 @@
                                     <div class="lg:w-3/4 md:w-full">
                                         <div class="animated bounceIn delay-2s faster py-8 text-black">
                                             <p class="xl:text-3xl lg:text-2xl md:text-xl sm:text-lg py-2">
-                                                <strong><a class="hover:text-blue-lighter">Indie product
+                                                <strong><a class="">Indie product
                                                         maker</a></strong>, also available for <strong><a
-                                                            class="hover:text-blue-lighter"
+                                                            class=""
                                                             @click="$emit('contactMeClicked', 'hire')">
                                                         hire!</a></strong>
                                             </p>
 
                                             <p class="xl:text-2xl lg:text-xl md:text-lg py-2">
                                                 Web & mobile application developer also with experience in design
-                                                and data science. Open to contract work for development data science
-                                                and technology consultancy.
+                                                and data science. Open to contract work for <u>development</u>, <u>data science</u>
+                                                and <u>technical consultancy</u>.
                                                 <a class="button is-rounded border-purple-dark border-2 hover:bg-purple-dark hover:text-white"
                                                    @click="$root.$emit('contactMeClicked', 'general')">Get in
                                                     touch</a>
@@ -88,11 +87,6 @@
                     </div>
                 </div>
             </div>
-
-
-            {{--<div class="" id="graph">--}}
-                {{--<img src="{{url('svgs/graph_lg.svg')}}" alt="">--}}
-            {{--</div>--}}
         </section>
 
         {{--Services--}}
@@ -143,21 +137,26 @@
                 @tile_ancestor
                     @slot('part_one')
                         <h1 class="title is-1">Software.</h1>
-                        <h1 class="subtitle">Developing technology for the present.</h1>
+                        <h1 class="subtitle">Technology for the present.</h1>
                         <div class="flex flex-wrap">
                             @box(['colour' => 'bg-green-light '])
-                                @slot('title')Software for business.@endslot
+                                @slot('title')Progress for business.@endslot
                             @endbox
                             @box(['colour' => 'bg-blue-light '])
-                                @slot('title')Design for humans.@endslot
+                                @slot('title')Designed for brains.@endslot
                             @endbox
                             @box(['colour' => 'bg-yellow-light '])
-                                @slot('title')Experience for customers.@endslot
+                                @slot('title')Experience for humans.@endslot
                             @endbox
                         </div>
                     @endslot
                     @slot('part_two')
                         <hr>
+
+                        <strong>Note</strong>: this site is a <u>work in progress</u>. If we have worked together in that past, please <strong><u><a @click="$emit('contactMeClicked', 'review')">leave me some feedback</a></u></strong> so I can fill it.
+
+                        <hr>
+
                         <div class="flex flex-wrap">
                             <div class="flex-1 mx-2 px-4">
                                 <div class="card">
@@ -174,13 +173,13 @@
                                                 </figure>
                                             </div>
                                             <div class="media-content">
-                                                <p class="title is-4">Mark Woodward</p>
-                                                <p class="subtitle is-6">@printedcupcompany</p>
+                                                <p class="title is-4">Nobody :(</p>
+                                                <p class="subtitle is-6">@twitterfeed</p>
                                             </div>
                                         </div>
 
                                         <div class="content">
-                                            Daniel's work is great and very delighted to have worked with him. <a>@bulmaio</a>.
+                                            (example) Daniel's work changed my life and my business. He is the best. <a>@bulmaio</a>.
                                             <a href="#">#css</a> <a href="#">#responsive</a>
                                             <br>
                                             <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
@@ -203,8 +202,8 @@
                                                 </figure>
                                             </div>
                                             <div class="media-content">
-                                                <p class="title is-4">John Smith</p>
-                                                <p class="subtitle is-6">@johnsmith</p>
+                                                <p class="title is-4">Nobody :(</p>
+                                                <p class="subtitle is-6">@boatymcboatface</p>
                                             </div>
                                         </div>
 
@@ -240,31 +239,20 @@
                 @tile_ancestor
                 @slot('part_one')
                     <h1 class="title is-1">Want to work together?</h1>
-                    {{--<h1 class="subtitle"></h1>--}}
-                    <button class="button is-rounded border-purple-dark hover:bg-purple-dark hover:text-white border-2">Get in touch</button>
+                    <h1 class="subtitle">Drop me an email!</h1>
+                    <button class="button is-rounded border-purple-dark hover:bg-purple-dark hover:text-white border-2" @click="$emit('contactMeClicked', 'hire')">Get in touch</button>
                 @endslot
                 @endtile_ancestor
             </div>
         </section>
-
-
-        {{--<section class="section bg-black" style="margin-top: -35rem; padding-top: 35rem;">--}}
-            {{--<div class="container is-fluid">--}}
-                {{--@tile_ancestor--}}
-                    {{--@slot('part_one')--}}
-                        {{--Want to work together? Lick my balls.--}}
-                    {{--@endslot--}}
-                {{--@endtile_ancestor--}}
-            {{--</div>--}}
-        {{--</section>--}}
     </main>
     <footer class="footer">
         <div class="container is-fluid">
             <div class="content text-center text-grey-light">
                 <p>
-                    <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                    is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+                    <strong>Crafted with stone and chisel</strong> by <a href="https://jgthms.com">Daniel Munn</a>.
+                    {{--<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content--}}
+                    {{--is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.--}}
                 </p>
             </div>
         </div>

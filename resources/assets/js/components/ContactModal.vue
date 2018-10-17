@@ -16,6 +16,12 @@
             </header>
             <section class="modal-card-body p-16">
 
+                <div class="notification" :class="`is-${status}`" v-show="style.sent">
+                    <button class="delete" @click="style.sent=false"></button>
+                    <span v-if="status==='danger'">Something happened. Please <u>check our credentials are correct</u>. I've made a log anyway just in case</span>
+                    <span v-if="status==='success'">Congratulations! You're message has been successfully sent!</span>
+                </div>
+
                 <div class="field">
                     <div class="control">
                         <input class="input is-rounded" :class="{ 'is-danger' : errors.name }"
@@ -37,16 +43,28 @@
                 <div class="field">
                     <div class="control">
                         <textarea class="textarea" v-model="data.message"
-                                  placeholder="Not too long please, i don't have all day. (only joking 😉)" ></textarea>
+                                  placeholder="Leave a message" ></textarea>
                     </div>
                 </div>
 
-                <div class="py-4">
+                <div class="field animated fadeIn fast" v-show="style.suggestion">
+                    <div class="control">
+                        <textarea class="textarea" v-model="data.feedback"
+                                  placeholder="Thank you. Your feedback is greatly appreciated." ></textarea>
+                    </div>
+                </div>
+
+                <small>Think i could improve the website? <u><a @click="style.suggestion=!style.suggestion">
+                    <span v-if="!style.suggestion">Leave me some feedback</span>
+                    <span v-if="style.suggestion">Hide feedback box</span>
+                </a></u>
+                </small>
+
+                <div class="pt-12">
                     <p class="control text-center">
-                        <button class="button bg-purple-dark text-white" @click="submit"
+                        <button class="button is-rounded border-purple-dark hover:bg-purple-dark hover:text-white" @click="submit"
                            :class="{ 'is-loading' : style.sending }">
-                            <span v-show="!style.sent">Send</span>
-                            <span v-show="style.sent">Sent!</span>
+                            <span>Send</span>
                         </button>
                     </p>
                 </div>
@@ -68,15 +86,18 @@
                     email: false
                 },
                 style: {
+                    suggestion: false,
                     visible: false,
                     sending: false,
                     sent: false
                 },
+                status: '',
                 data: {
                     type: String,
                     name: '',
                     email: '',
-                    message: ''
+                    message: '',
+                    feedback: ''
                 }
             }
         },
@@ -97,6 +118,8 @@
                 this.style.sending=true;
 
                 this.$root.axios.post('message', this.data)
+                    .then(r => this.status = 'success')
+                    .catch(e => this.status = 'danger')
                     .finally(r => {
                         this.style.sent = true;
                         this.style.sending = false;
