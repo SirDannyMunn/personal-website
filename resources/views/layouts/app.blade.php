@@ -89,6 +89,13 @@
             </div>
         </section>
 
+        {{--Leave me feedback--}}
+        <section class="section text-center">
+            <div class="container">
+                <span class="text-black"><strong>Note</strong>: this site is a <strong><u>work in progress</u></strong>. If we have worked together in that past, please <strong><u><a @click="$emit('contactMeClicked', 'review')">leave me some feedback</a></u></strong> so I can fill it.</span>
+            </div>
+        </section>
+
         {{--Services--}}
         <section class="hero is-medium">
             <div class="hero-body">
@@ -151,10 +158,6 @@
                         </div>
                     @endslot
                     @slot('part_two')
-                        <hr>
-
-                        <strong>Note</strong>: this site is a <u>work in progress</u>. If we have worked together in that past, please <strong><u><a @click="$emit('contactMeClicked', 'review')">leave me some feedback</a></u></strong> so I can fill it.
-
                         <hr>
 
                         <div class="flex flex-wrap">
