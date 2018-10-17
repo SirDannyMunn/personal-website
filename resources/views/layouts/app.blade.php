@@ -149,6 +149,37 @@
             </div>
         </section>
 
+        {{--<section class="hero">--}}
+            {{--<div class="hero-body">--}}
+                {{--<div class="container text-center">--}}
+                    {{--<h1 class="title">--}}
+                        {{--Other Possibilities--}}
+                    {{--</h1>--}}
+                    {{--<h2 class="subtitle">--}}
+                        {{--Anything.--}}
+                    {{--</h2>--}}
+
+                    {{--<div class="flex flex-wrap">--}}
+                        {{--<div class="w-1/3 p-2">--}}
+                            {{--<div class="text-white text-center bg-silver p-2">--}}
+                                {{--<span>Current software product on the market not quite fit your needs?</span>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="w-1/3 p-2">--}}
+                            {{--<div class="text-white text-center bg-silver p-2">--}}
+                                {{--<span>Mobile</span>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="w-1/3 p-2">--}}
+                            {{--<div class="text-white text-center bg-silver p-2">--}}
+                                {{--<span>Desktop</span>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</section>--}}
+
         {{--Info--}}
         <section class="section is-medium">
             <div class="container">
@@ -183,20 +214,17 @@
                                         <div class="media">
                                             <div class="media-left">
                                                 <figure class="image is-48x48">
-                                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                                    <img src="{{url('images/pcc_logo.jpg')}}" class="is-rounded" style="object-fit: cover">
                                                 </figure>
                                             </div>
                                             <div class="media-content">
-                                                <p class="title is-4">Nobody :(</p>
-                                                <p class="subtitle is-6">@twitterfeed</p>
+                                                <p class="title is-4">Mark Woodward</p>
+                                                <p class="subtitle is-6"><a target="_blank" href="https://twitter.com/PrintedCupCo">@PrintedCupCo</a></p>
                                             </div>
                                         </div>
 
                                         <div class="content">
-                                            (example) Daniel's work changed my life and my business. He is the best. <a>@bulmaio</a>.
-                                            <a href="#">#css</a> <a href="#">#responsive</a>
-                                            <br>
-                                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                            Daniel has been central to automating our systems and processes at the Printed Cup Company, and has a great understanding of systems from web sites to crm and how get systems connected, a very diligent worker, willing to find new ways to do things.
                                         </div>
                                     </div>
                                 </div>
@@ -212,17 +240,20 @@
                                         <div class="media">
                                             <div class="media-left">
                                                 <figure class="image is-48x48">
-                                                    <img src="{{url('images/pcc_logo.jpg')}}" class="is-rounded" style="object-fit: cover">
+                                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
                                                 </figure>
                                             </div>
                                             <div class="media-content">
-                                                <p class="title is-4">Mark Woodward</p>
-                                                <p class="subtitle is-6"><a href="https://twitter.com/PrintedCupCo">@PrintedCupCo</a></p>
+                                                <p class="title is-4">Nobody :(</p>
+                                                <p class="subtitle is-6">@twitterfeed</p>
                                             </div>
                                         </div>
 
                                         <div class="content">
-                                            Daniel has been central to automating our systems and processes at the Printed Cup Company, and has a great understanding of systems from web sites to crm and how get systems connected, a very diligent worker, willing to find new ways to do things.
+                                            (example) Daniel's work changed my life and my business. He is the best. <a>@bulmaio</a>.
+                                            <a href="#">#css</a> <a href="#">#responsive</a>
+                                            <br>
+                                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
                                         </div>
                                     </div>
                                 </div>
@@ -263,10 +294,10 @@
         <div class="container">
             <div class="content text-center text-grey-light">
                 <p>
-                    <strong>Crafted with stone and chisel</strong> by <a href="https://jgthms.com">Daniel Munn</a>.
+                    <strong>Crafted with keyboard and brain</strong> by <a href="https://jgthms.com">Daniel Munn</a>.
                     {{--<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content--}}
                     {{--is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.--}}
-                </p>2
+                </p>
             </div>
         </div>
     </footer>
