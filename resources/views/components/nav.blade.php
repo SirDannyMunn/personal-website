@@ -29,19 +29,17 @@
                 </div>
 
                 <div class="navbar-end">
-                    <a class="navbar-item">
+                    <a class="navbar-item" @click="$emit('contactMeClicked', 'review')">
                         Leave a review
                     </a>
                     <a class="navbar-item">
-                        Home
+                        Blog
                     </a>
                     <a class="navbar-item">
-                        Examples
+                        Services
                     </a>
-                    <a class="navbar-item">
-                        {{--<button class="button bg-white" @click="$emit('contactMeClicked', 'hire')">--}}
-                            Let's make
-                        {{--</button>--}}
+                    <a class="navbar-item"  @click="$emit('contactMeClicked', 'hire')">
+                        Contact
                     </a>
                 </div>
             </div>

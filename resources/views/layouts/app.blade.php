@@ -286,9 +286,6 @@
                 @endtile_ancestor
             </div>
         </section>
-
-
-
     </main>
     <footer class="footer">
         <div class="container">
