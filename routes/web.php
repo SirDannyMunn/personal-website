@@ -37,3 +37,7 @@ Route::post('message', function(\Illuminate\Http\Request $request) {
 
     return response(request(), 201);
 });
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
