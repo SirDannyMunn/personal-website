@@ -30,6 +30,7 @@ Vue.component('auto-animation', require('./components/AutoAnimation.vue'));
 Vue.component('seek-animation', require('./components/SeekAnimation.vue'));
 Vue.component('about-me', require('./components/AboutMe.vue'));
 Vue.component('social-media-sharing', require('./components/SocialMediaSharing.vue'));
+Vue.component('land-gradient', require('./components/LandGradientAnimation.vue'));
 
 import anime from 'animejs';
 

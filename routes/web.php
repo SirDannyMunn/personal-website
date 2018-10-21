@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('blog', 'BlogController@index');
+Route::get('post/{slug}', 'BlogController@show');
 
 Route::get('hire-me', function () {
     return 'Coming Soon!';
