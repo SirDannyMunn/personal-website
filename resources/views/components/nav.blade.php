@@ -32,7 +32,7 @@
                     <a class="navbar-item" @click="$emit('contactMeClicked', 'review')">
                         Leave a review
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="{{url('blog')}}">
                         Blog
                     </a>
                     <a class="navbar-item">
