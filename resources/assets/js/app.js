@@ -29,7 +29,7 @@ Vue.component('contact-modal', require('./components/ContactModal.vue'));
 Vue.component('auto-animation', require('./components/AutoAnimation.vue'));
 Vue.component('seek-animation', require('./components/SeekAnimation.vue'));
 Vue.component('about-me', require('./components/AboutMe.vue'));
-Vue.component('slash', require('./components/Slash.vue'));
+Vue.component('social-media-sharing', require('./components/SocialMediaSharing.vue'));
 
 import anime from 'animejs';
 

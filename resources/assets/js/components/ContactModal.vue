@@ -117,7 +117,10 @@
                 this.style.sending=true;
 
                 this.$root.axios.post('message', this.data)
-                    .then(r => this.status = 'success')
+                    .then(r => {
+                        this.status = 'success';
+                        this.data.forEach(field => field=null)
+                    })
                     .catch(e => this.status = 'danger')
                     .finally(r => {
                         this.style.sent = true;

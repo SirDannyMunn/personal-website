@@ -55,7 +55,7 @@
 
                         {{--About Me--}}
                         <div class="has-text-centered">
-                            <div class="p-8 animated bounceInLeft slow bg-white shadow-lg is-bordered" style="border-radius: 314px">
+                            <div class="p-8 animated bounceInLeft slow bg-white shadow-lg is-bordered rounded-half">
                                 <div class="flex flex-wrap">
                                     <!--Image-->
                                     <div class="lg:w-1/4 md:w-full flex mx-auto content-center">
@@ -101,53 +101,53 @@
         </section>
 
         {{--Leave me feedback--}}
-        <section class="section text-center">
-            <div class="container">
-                <h3 class="text-black"><strong>Note</strong>: this site is a <strong><u>work in progress</u></strong>. If we have worked together in that past, please <strong><u><a @click="$emit('contactMeClicked', 'review')">leave me some feedback</a></u></strong> so I can fill it.</h3>
-            </div>
-        </section>
+        {{--<section class="section text-center">--}}
+            {{--<div class="container">--}}
+                {{--<h3 class="text-black"><strong>Note</strong>: this site is a <strong><u>work in progress</u></strong>. If we have worked together in that past, please <strong><u><a @click="$emit('contactMeClicked', 'review')">leave me some feedback</a></u></strong> so I can fill it.</h3>--}}
+            {{--</div>--}}
+        {{--</section>--}}
 
         {{--Services--}}
-        <section class="hero is-medium">
-            <div class="hero-body">
-                <div class="container text-center">
-                    <h1 class="title">
-                        Available services
-                    </h1>
-                    <h2 class="subtitle">
-                        Meticulous software applications for all of the following platforms.
-                    </h2>
+        {{--<section class="hero is-medium">--}}
+            {{--<div class="hero-body">--}}
+                {{--<div class="container text-center">--}}
+                    {{--<h1 class="title">--}}
+                        {{--Available services--}}
+                    {{--</h1>--}}
+                    {{--<h2 class="subtitle">--}}
+                        {{--Meticulous software applications for all of the following platforms.--}}
+                    {{--</h2>--}}
 
-                    <div class="flex flex-wrap">
-                        <div class="w-1/5 p-2">
-                            <div class="text-white text-center bg-silver p-2">
-                                <span>Web</span>
-                            </div>
-                        </div>
-                        <div class="w-1/5 p-2">
-                            <div class="text-white text-center bg-silver p-2">
-                                <span>Mobile</span>
-                            </div>
-                        </div>
-                        <div class="w-1/5 p-2">
-                            <div class="text-white text-center bg-silver p-2">
-                                <span>Desktop</span>
-                            </div>
-                        </div>
-                        <div class="w-1/5 p-2">
-                            <div class="text-white text-center bg-silver p-2">
-                                <span>Cloud</span>
-                            </div>
-                        </div>
-                        <div class="w-1/5 p-2">
-                            <div class="text-white text-center bg-silver p-2">
-                                <span>Chrome</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    {{--<div class="flex flex-wrap">--}}
+                        {{--<div class="w-1/5 p-2">--}}
+                            {{--<div class="text-white text-center bg-silver p-2">--}}
+                                {{--<span>Web</span>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="w-1/5 p-2">--}}
+                            {{--<div class="text-white text-center bg-silver p-2">--}}
+                                {{--<span>Mobile</span>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="w-1/5 p-2">--}}
+                            {{--<div class="text-white text-center bg-silver p-2">--}}
+                                {{--<span>Desktop</span>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="w-1/5 p-2">--}}
+                            {{--<div class="text-white text-center bg-silver p-2">--}}
+                                {{--<span>Cloud</span>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="w-1/5 p-2">--}}
+                            {{--<div class="text-white text-center bg-silver p-2">--}}
+                                {{--<span>Chrome</span>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</section>--}}
 
         {{--<section class="hero">--}}
             {{--<div class="hero-body">--}}
@@ -294,6 +294,8 @@
                     <strong>Crafted with keyboard and brain</strong> by <a href="https://jgthms.com">Daniel Munn</a>.
                     {{--<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content--}}
                     {{--is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.--}}
+                    <Hr>
+                    <social-media-sharing></social-media-sharing>
                 </p>
             </div>
         </div>
