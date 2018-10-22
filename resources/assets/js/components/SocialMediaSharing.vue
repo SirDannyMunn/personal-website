@@ -1,47 +1,50 @@
 <template>
-    <social-sharing url="https://vuejs.org/"
-                    title="The Progressive JavaScript Framework"
-                    description="Intuitive, Fast and Composable MVVM for building interactive interfaces."
+    <social-sharing url="https://munn.pro"
+                    title="Freelance application developer"
+                    description="Professional mobile, web and desktop application developer."
                     quote="Vue is a progressive framework for building user interfaces."
-                    hashtags="vuejs,javascript,framework"
-                    twitter-user="vuejs"
+                    hashtags="munn,developer"
+                    twitter-user="@daniel_the_munn"
                     inline-template>
         <div>
             <network network="email">
-                <span><i class="fa fa-envelope"></i> Email</span>
+                <span><i class="far fa-envelope"></i> Email</span>
             </network>
             <network network="facebook">
-                <span><i class="fa fa-facebook"></i> Facebook</span>
+                <span><i class="fab fa-facebook-f"></i> Facebook</span>
             </network>
             <network network="googleplus">
-                <span><i class="fa fa-google-plus"></i> Google +</span>
+                <span><i class="fab fa-google-plus-g"></i> Google +</span>
             </network>
             <network network="linkedin">
-                <span><i class="fa fa-linkedin"></i> LinkedIn</span>
+                <span><i class="fab fa-linkedin-in"></i> LinkedIn</span>
             </network>
             <network network="pinterest">
-                <span><i class="fa fa-pinterest"></i> Pinterest</span>
+                <span><i class="fab fa-pinterest-p"></i> Pinterest</span>
             </network>
             <network network="reddit">
-                <span><i class="fa fa-reddit"></i> Reddit</span>
+                <span><i class="fab fa-reddit-alien"></i> Reddit</span>
             </network>
-            <network network="sms">
-                <span><i class="fa fa-commenting-o"></i> SMS</span>
-            </network>
-            <network network="telegram">
-                <span><i class="fa fa-telegram"></i> Telegram</span>
-            </network>
+            <!--<network network="sms">-->
+                <!--<span><i class="fa fa-commenting-o"></i> SMS</span>-->
+            <!--</network>-->
+            <!--<network network="telegram">-->
+                <!--<span><i class="fa fa-telegram"></i> Telegram</span>-->
+            <!--</network>-->
             <network network="twitter">
-                <span><i class="fa fa-twitter"></i> Twitter</span>
+                <span><i class="fab fa-twitter"></i> Twitter</span>
             </network>
             <network network="whatsapp">
-                <span><i class="fa fa-whatsapp"></i> Whatsapp</span>
+                <span><i class="fab fa-whatsapp"></i> Whatsapp</span>
             </network>
         </div>
     </social-sharing>
 </template>
 
 <script>
+    let SocialSharing = require('vue-social-sharing');
+    Vue.use(SocialSharing);
+
     export default {
         name: "Polygon",
         data() {

@@ -22,6 +22,7 @@
     <link href="{{mix('css/app.css')}}" rel="stylesheet">
     <link rel="icon" href="{{url('/images/logo_brain.png')}}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/brands.css" integrity="sha384-Px1uYmw7+bCkOsNAiAV5nxGKJ0Ixn5nChyW8lCK1Li1ic9nbO5pC/iXaq27X5ENt" crossorigin="anonymous">
 
     @stack('styles-bottom')
 </head>
@@ -43,9 +44,15 @@
             <div class="content text-center text-grey-light">
                 <p>
                     <strong>Crafted with keyboard and brain</strong> by <a href="https://jgthms.com">Daniel Munn</a>.
-                    {{--<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content--}}
-                    {{--is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.--}}
-                    <Hr>
+                    <br>
+                    Some <a @click="faviconAttributions=!faviconAttributions">icons</a> borrowed from favicon
+
+                    <div v-show="faviconAttributions">
+                        <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                        <div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                        <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                    </div>
+                <Hr>
                     <social-media-sharing></social-media-sharing>
                 </p>
             </div>
