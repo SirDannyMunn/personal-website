@@ -3,16 +3,17 @@
 @section('content')
 
     {{-- Land --}}
-    <section class="hero is-fullheight" id="land">
+    <section class="hero is-fullheight relative" id="land">
         <land-gradient></land-gradient>
-        <div class="absolute pin-t pin-l z-0 w-full" id="slant">
-            <img class="lg:block hidden h-full w-full" src="{{url('images/angle_lg.png')}}">
-            {{--<img class="sm:hidden md:block w-full" src="{{url('images/angle_md.png')}}" alt="">--}}
-            <img class="sm:block hidden h-full w-full" src="{{url('images/angle_sm.png')}}">
+        <div class="absolute" style="width: 100%;
+                                     height: 100%;
+                                     background-image: url({{url('images/angle_lg.png')}});
+                                     background-repeat: no-repeat;
+                                     background-size: 100% 100%;">
         </div>
         <div class="hero-body">
             <div class="container">
-                <div class="md:mb-32">
+                <div class="md:mb-80">
 
                     {{--Logo--}}
                     <div class="sm:w-full md:mx-16 md:w-3/4 lg:w-1/3 xxl:w-1/3 lg:pt-16 pb-16">
@@ -20,45 +21,43 @@
                     </div>
 
                     {{--About Me--}}
-                    <div class="has-text-centered">
-                        <div class="p-8 animated bounceInLeft slow bg-white shadow-lg is-bordered rounded-half">
-                            <div class="flex flex-wrap">
-                                <!--Image-->
-                                <div class="lg:w-1/4 md:w-full flex mx-auto content-center">
-                                    <div class="rounded-full image is-128x128 is-rounded overflow-hidden
+                    <div class="p-8 animated bounceInLeft slow bg-white shadow-lg is-bordered rounded-full has-text-centered">
+                        <div class="flex flex-wrap">
+                            <!--Image-->
+                            <div class="lg:w-1/4 md:w-full flex mx-auto content-center">
+                                <div class="rounded-full image is-128x128 is-rounded overflow-hidden
                                              m-auto
                                             animated bounceIn delay-1s faster">
-                                        <img class="me" src="images/me.png" alt="Avatar">
-                                    </div>
+                                    <img class="me" src="images/me.png" alt="Avatar">
                                 </div>
+                            </div>
 
-                                <!--Text-->
-                                <div class="lg:w-3/4 md:w-full">
-                                    <div class="animated bounceIn delay-2s faster py-8 text-black">
-                                        <p class="xl:text-3xl lg:text-2xl md:text-xl sm:text-lg py-2">
-                                            <strong><a class="">Indie product
-                                                    maker</a></strong>, also available for <strong><a
-                                                        class=""
-                                                        @click="$emit('contactMeClicked', 'hire')">
-                                                    hire!</a></strong>
-                                            <small>(blog coming soon)</small>
-                                        </p>
+                            <!--Text-->
+                            <div class="lg:w-3/4 md:w-full">
+                                <div class="animated bounceIn delay-2s faster py-8 text-black">
+                                    <p class="xl:text-3xl lg:text-2xl md:text-xl sm:text-lg py-2">
+                                        <strong><a class="">Indie product
+                                                maker</a></strong>, also available for <strong><a
+                                                    class=""
+                                                    @click="$emit('contactMeClicked', 'hire')">
+                                                hire!</a></strong>
+                                        <small>(blog coming soon)</small>
+                                    </p>
 
-                                        <p class="xl:text-2xl lg:text-xl md:text-lg py-2">
-                                            Web & mobile application developer also with experience in design
-                                            and data science. Open to contract work for <u>development</u>, <u>data
-                                                science</u>
-                                            and <u>technical consultancy</u>.
-                                            <a class="button is-rounded border-purple-dark border-2 hover:bg-purple-dark hover:text-white"
-                                               @click="$root.$emit('contactMeClicked', 'general')">Get in
-                                                touch</a>
-                                        </p>
+                                    <p class="xl:text-2xl lg:text-xl md:text-lg py-2">
+                                        Web & mobile application developer also with experience in design
+                                        and data science. Open to contract work for <u>development</u>, <u>data
+                                            science</u>
+                                        and <u>technical consultancy</u>.
+                                        <a class="button is-rounded border-purple-dark border-2 hover:bg-purple-dark hover:text-white"
+                                           @click="$root.$emit('contactMeClicked', 'general')">Get in
+                                            touch</a>
+                                    </p>
 
-                                        <span>
+                                    <span>
                                                 Worked with me before? <strong><a
-                                                        @click="$emit('contactMeClicked', 'review')">Leave a review</a></strong>
+                                                    @click="$emit('contactMeClicked', 'review')">Leave a review</a></strong>
                                             </span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -66,134 +65,54 @@
                 </div>
             </div>
         </div>
+
+        <img src="{{url('/images/clouds.png')}}" class="absolute w-full pin-b">
     </section>
 
     {{--Leave me feedback--}}
     <section class="section text-center">
         <div class="container">
-            <h3 class="text-black"><strong>Note</strong>: this site is a <strong><u>work in progress</u></strong>. If we have worked together in that past, please <strong><u><a @click="$emit('contactMeClicked', 'review')">leave me some feedback</a></u></strong> so I can fill it.</h3>
+            <h3 class="text-black"><strong>Note</strong>: this site is a <strong><u>work in progress</u></strong>. If we
+                have worked together in that past, please <strong><u><a @click="$emit('contactMeClicked', 'review')">leave
+                            me some feedback</a></u></strong> so I can fill it.</h3>
         </div>
     </section>
 
     {{--Services--}}
     <section class="hero is-medium">
-    <div class="hero-body">
-    <div class="container text-center">
-    <h1 class="title">
-    Apps.
-    </h1>
-    <h2 class="subtitle">
-    Meticulous software applications for all of the following platforms.
-    </h2>
-
-    <div class="flex flex-wrap">
-    <div class="w-1/5 p-2">
-    <div class="text-white text-center bg-silver p-2">
-    <span>Web</span>
-    </div>
-    </div>
-    <div class="w-1/5 p-2">
-    <div class="text-white text-center bg-silver p-2">
-    <span>Mobile</span>
-    </div>
-    </div>
-    <div class="w-1/5 p-2">
-    <div class="text-white text-center bg-silver p-2">
-    <span>Desktop</span>
-    </div>
-    </div>
-    <div class="w-1/5 p-2">
-    <div class="text-white text-center bg-silver p-2">
-    <span>Cloud</span>
-    </div>
-    </div>
-    <div class="w-1/5 p-2">
-    <div class="text-white text-center bg-silver p-2">
-    <span>Chrome</span>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
-
-    {{--Web--}}
-    <section class="hero is-medium">
         <div class="hero-body">
             <div class="container text-center">
                 <h1 class="title">
-                    Web.
+                    What services do i offer?
                 </h1>
-                <h2 class="subtitle">
-                    Meticulous software applications for all of the following platforms.
-                </h2>
+                <hr>
+                {{--<h2 class="subtitle">--}}
+                    {{--Meticulous software applications for all of the following platforms.--}}
+                {{--</h2>--}}
 
                 <div class="flex flex-wrap">
-                    <div class="w-1/5 p-2">
-                        <div class="text-white text-center bg-silver p-2">
-                            <span>Web</span>
+                    <div class="flex-auto px-8">
+                        <div class="box text-black text-center bg-white hover:shadow-lg p-12 tilt hover:z-10 z-0">
+                            <img src="{{url('/svgs/cloud-computing.svg')}}" class="w-24 my-8" alt="">
+                            <h3 class="my-4">Web</h3>
+                            <br>
+                            <button class="my-4 button is-rounded bg-white border-2 border-purple hover:bg-purple hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
                         </div>
                     </div>
-                    <div class="w-1/5 p-2">
-                        <div class="text-white text-center bg-silver p-2">
-                            <span>Mobile</span>
+                    <div class="flex-auto px-8">
+                        <div class="box text-black text-center bg-white hover:shadow-lg p-12 tilt hover:z-10 z-0">
+                            <img src="{{url('/svgs/smartphone.svg')}}" class="w-24 my-8" alt="">
+                            <h3 class="my-4">Mobile</h3>
+                            <br>
+                            <button class="my-4 button is-rounded bg-white border-2 border-purple hover:bg-purple hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
                         </div>
                     </div>
-                    <div class="w-1/5 p-2">
-                        <div class="text-white text-center bg-silver p-2">
-                            <span>Desktop</span>
-                        </div>
-                    </div>
-                    <div class="w-1/5 p-2">
-                        <div class="text-white text-center bg-silver p-2">
-                            <span>Cloud</span>
-                        </div>
-                    </div>
-                    <div class="w-1/5 p-2">
-                        <div class="text-white text-center bg-silver p-2">
-                            <span>Chrome</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    {{--Desktop--}}
-    <section class="hero is-medium">
-        <div class="hero-body">
-            <div class="container text-center">
-                <h1 class="title">
-                    Desktop.
-                </h1>
-                <h2 class="subtitle">
-                    Meticulous software applications for all of the following platforms.
-                </h2>
-
-                <div class="flex flex-wrap">
-                    <div class="w-1/5 p-2">
-                        <div class="text-white text-center bg-silver p-2">
-                            <span>Web</span>
-                        </div>
-                    </div>
-                    <div class="w-1/5 p-2">
-                        <div class="text-white text-center bg-silver p-2">
-                            <span>Mobile</span>
-                        </div>
-                    </div>
-                    <div class="w-1/5 p-2">
-                        <div class="text-white text-center bg-silver p-2">
-                            <span>Desktop</span>
-                        </div>
-                    </div>
-                    <div class="w-1/5 p-2">
-                        <div class="text-white text-center bg-silver p-2">
-                            <span>Cloud</span>
-                        </div>
-                    </div>
-                    <div class="w-1/5 p-2">
-                        <div class="text-white text-center bg-silver p-2">
-                            <span>Chrome</span>
+                    <div class="flex-auto px-8">
+                        <div class="box text-black text-center bg-white hover:shadow-lg p-12 tilt hover:z-10 z-0">
+                            <img src="{{url('/svgs/desktop.svg')}}" class="w-24 my-8" alt="">
+                            <h3 class="my-4">Desktop</h3>
+                            <br>
+                            <button class="my-4 button is-rounded bg-white border-2 border-purple hover:bg-purple hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
                         </div>
                     </div>
                 </div>
@@ -206,8 +125,9 @@
         <div class="container">
             @tile_ancestor
             @slot('part_one')
-                <h1 class="title is-1">Software.</h1>
-                <h1 class="subtitle">Technology for the present.</h1>
+                <h1 class="title is-1">Testimonials.</h1>
+                <hr>
+                <h1 class="subtitle">All software is designed</h1>
                 <div class="flex flex-wrap">
                     @box(['colour' => 'bg-green-light '])
                     @slot('title')Productivity for business.@endslot
@@ -318,11 +238,11 @@
             @endtile_ancestor
         </div>
     </section>
-
-    <div class="w-full">
-        <img class="w-full" src="{{url('svgs/graph_lg.svg')}}" alt="">
-    </div>
 @endsection
+
+{{--<div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>--}}
+{{--<div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>--}}
+{{--<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>--}}
 
 @push('scripts-bottom')
 

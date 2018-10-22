@@ -51,6 +51,10 @@
             </div>
         </div>
     </footer>
+
+    <div class="w-full">
+        <img class="w-full" src="{{url('svgs/graph_lg.svg')}}" alt="">
+    </div>
 </div>
 </body>
 <script src="{{mix('js/app.js')}}"></script>
