@@ -180,7 +180,7 @@ module.exports = {
   screens: {
       'sm': '320px',
 
-      'md': '768px',
+      'md': '576px',
 
       'lg': '992px',
 
@@ -714,6 +714,7 @@ module.exports = {
     '24': '6rem',
     '32': '8rem',
     '64': '16rem',
+    '80': '20rem',
 
     '15%': '15%',
   },

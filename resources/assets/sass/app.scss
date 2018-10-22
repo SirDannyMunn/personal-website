@@ -91,9 +91,15 @@ a.navbar-item:hover {
 @tailwind preflight;
 @tailwind utilities;
 
-@media only screen and (min-width: 1024px) {
+@media only (min-width: 1024px) {
   .container {
     padding: 0 18rem;
+  }
+}
+
+@media only (max-width: 1023px) {
+  .container {
+    padding: 0 0;
   }
 }
 
