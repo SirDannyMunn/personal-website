@@ -13,7 +13,7 @@
         </div>
         <div class="hero-body">
             <div class="container">
-                <div class="md:mb-80">
+                <div class="md:mb-32">
 
                     {{--Logo--}}
                     <div class="sm:w-full md:mx-16 md:w-3/4 lg:w-1/3 xxl:w-1/3 lg:pt-16 pb-16">
@@ -65,7 +65,6 @@
                 </div>
             </div>
         </div>
-
         <img src="{{url('/images/clouds.png')}}" class="absolute w-full pin-b">
     </section>
 
@@ -91,28 +90,28 @@
                 {{--</h2>--}}
 
                 <div class="flex flex-wrap">
-                    <div class="flex-auto px-8">
+                    <div class="flex-auto md:w-1/3 p-4">
                         <div class="box text-black text-center bg-white hover:shadow-lg p-12 tilt hover:z-10 z-0">
                             <img src="{{url('/svgs/cloud-computing.svg')}}" class="w-24 my-8" alt="">
                             <h3 class="my-4">Web</h3>
                             <br>
-                            <button class="my-4 button is-rounded bg-white border-2 border-purple hover:bg-purple hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
+                            <button class="sm:text-sm my-4 button is-rounded bg-white border-2 border-purple hover:bg-purple hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
                         </div>
                     </div>
-                    <div class="flex-auto px-8">
+                    <div class="flex-auto md:w-1/3 p-4">
                         <div class="box text-black text-center bg-white hover:shadow-lg p-12 tilt hover:z-10 z-0">
                             <img src="{{url('/svgs/smartphone.svg')}}" class="w-24 my-8" alt="">
                             <h3 class="my-4">Mobile</h3>
                             <br>
-                            <button class="my-4 button is-rounded bg-white border-2 border-purple hover:bg-purple hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
+                            <button class="sm:text-sm my-4 button is-rounded bg-white border-2 border-purple hover:bg-purple hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
                         </div>
                     </div>
-                    <div class="flex-auto px-8">
+                    <div class="flex-auto md:w-1/3 p-4">
                         <div class="box text-black text-center bg-white hover:shadow-lg p-12 tilt hover:z-10 z-0">
                             <img src="{{url('/svgs/desktop.svg')}}" class="w-24 my-8" alt="">
                             <h3 class="my-4">Desktop</h3>
                             <br>
-                            <button class="my-4 button is-rounded bg-white border-2 border-purple hover:bg-purple hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
+                            <button class="sm:text-sm my-4 button is-rounded bg-white border-2 border-purple hover:bg-purple hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
                         </div>
                     </div>
                 </div>
@@ -124,100 +123,49 @@
     <section class="section is-medium">
         <div class="container">
             @tile_ancestor
-            @slot('part_one')
-                <h1 class="title is-1">Testimonials.</h1>
-                <hr>
-                <h1 class="subtitle">All software is designed</h1>
-                <div class="flex flex-wrap">
-                    @box(['colour' => 'bg-green-light '])
-                    @slot('title')Productivity for business.@endslot
-                    @endbox
-                    @box(['colour' => 'bg-blue-light '])
-                    @slot('title')Designed for brains.@endslot
-                    @endbox
-                    @box(['colour' => 'bg-yellow-light '])
-                    @slot('title')Experience for humans.@endslot
-                    @endbox
-                </div>
-            @endslot
+            {{--@slot('part_one')--}}
+                {{--<div class="flex flex-wrap">--}}
+                    {{--@box(['colour' => 'bg-green-light '])--}}
+                    {{--@slot('title')Productivity for business.@endslot--}}
+                    {{--@endbox--}}
+                    {{--@box(['colour' => 'bg-blue-light '])--}}
+                    {{--@slot('title')Designed for brains.@endslot--}}
+                    {{--@endbox--}}
+                    {{--@box(['colour' => 'bg-yellow-light '])--}}
+                    {{--@slot('title')Experience for humans.@endslot--}}
+                    {{--@endbox--}}
+                {{--</div>--}}
+            {{--@endslot--}}
             @slot('part_two')
-                <hr>
-
-                <div class="flex flex-wrap">
-                    <div class="flex-1 mx-2 px-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="https://bulma.io/images/placeholders/1280x960.png"
-                                         alt="Placeholder image">
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <figure class="image is-48x48">
-                                            <img src="{{url('images/pcc_logo.jpg')}}" class="is-rounded"
-                                                 style="object-fit: cover">
-                                        </figure>
-                                    </div>
-                                    <div class="media-content">
-                                        <p class="title is-4">Mark Woodward</p>
-                                        <p class="subtitle is-6"><a target="_blank"
-                                                                    href="https://twitter.com/PrintedCupCo">@PrintedCupCo</a>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="content">
-                                    Daniel has been central to automating our systems and processes at the Printed Cup
-                                    Company, and has a great understanding of systems from web sites to crm and how get
-                                    systems connected, a very diligent worker, willing to find new ways to do things.
-                                </div>
-                            </div>
-                        </div>
+                <h1 class="title is-1">Testimonials</h1>
+                {{--<h1 class="subtitle">All software is designed</h1>--}}
+                <div class="flex justify-center flex-wrap">
+                    <div class="w-1/2 mx-2 px-4">
+                        @picture_card(['name' => 'Mark Woodward', 'twitter' => '@PrintedCupCo', 'image' => 'pcc_logo.jpg'])
+                            @slot('content')
+                                Daniel has been central to automating our systems and processes at the Printed Cup
+                                Company, and has a great understanding of systems from web sites to crm and how get
+                                systems connected, a very diligent worker, willing to find new ways to do things.
+                            @endslot
+                        @endpicture_card
                     </div>
-                    <div class="flex-1 mx-2 px-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="https://bulma.io/images/placeholders/1280x960.png"
-                                         alt="Placeholder image">
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <figure class="image is-48x48">
-                                            <img src="https://bulma.io/images/placeholders/96x96.png"
-                                                 alt="Placeholder image">
-                                        </figure>
-                                    </div>
-                                    <div class="media-content">
-                                        <p class="title is-4">Nobody :(</p>
-                                        <p class="subtitle is-6">@twitterfeed</p>
-                                    </div>
-                                </div>
-
-                                <div class="content">
-                                    (example) Daniel's work changed my life and my business. He is the best.
-                                    <a>@bulmaio</a>.
-                                    <a href="#">#css</a> <a href="#">#responsive</a>
-                                    <br>
-                                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {{--<div class="flex-1 mx-2 px-4">--}}
+                        {{--@picture_card(['name' => 'Nobody', 'twitter' => '@boatymcboatface', 'image' => ''])--}}
+                            {{--@slot('content')--}}
+                                {{--Nobody's added anything to me :(--}}
+                            {{--@endslot--}}
+                        {{--@endpicture_card--}}
+                    {{--</div>--}}
                 </div>
             @endslot
             @slot('part_three')
                 <hr>
                 <div class="flex">
 
-                    Tools of choice
+                    {{--Tools of choice--}}
 
-                    Rock, hammer, tools
-                    Unleash me on your problems.
+                    {{--Rock, hammer, tools--}}
+                    {{--Unleash me on your problems.--}}
                 </div>
             @endslot
             @endtile_ancestor

@@ -16,7 +16,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Blade::component('components.tile_ancestor', 'tile_ancestor');
         Blade::component('components.box', 'box');
-
+        Blade::component('components.picture_card', 'picture_card');
     }
 
     /**

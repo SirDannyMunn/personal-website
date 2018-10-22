@@ -504,6 +504,7 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '100': '25rem',
     '1/2': '50%',
     '1/3': '33.33333%',
     '2/3': '66.66667%',
@@ -552,6 +553,7 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '100': '25rem',
     'full': '100%',
     'screen': '100vh'
   },
@@ -622,8 +624,9 @@ module.exports = {
     '2xl': '70rem',
     '3xl': '80rem',
     '4xl': '90rem',
-    '5xl': '100rem',
+    // '5xl': '100rem',
     'full': '100%',
+    '100': '25rem'
   },
 
 
@@ -644,6 +647,7 @@ module.exports = {
   maxHeight: {
     'full': '100%',
     'screen': '100vh',
+    'xs': '20rem'
   },
 
 
