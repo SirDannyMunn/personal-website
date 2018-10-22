@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
-use Illuminate\Http\Request;
 use TCG\Voyager\Models\Post;
 
 class BlogController extends Controller

@@ -54,7 +54,7 @@
                 </div>
 
                 <small><span v-if="!style.suggestion">Think i could improve the website?</span>&nbsp;<u><a @click="style.suggestion=!style.suggestion">
-                    <span v-if="!style.suggestion">Leave me some feedback</span>
+                    <span v-if="!style.suggestion">Leave me some feedback on the website</span>
                     <span v-if="style.suggestion">Hide feedback box</span>
                 </a></u>
                 </small>
