@@ -31,7 +31,8 @@ $lightGrey: #C4C4C4;
   //background: linear-gradient(149.83deg, #2E2EAA 7.78%, rgba(209, 209, 209, 0) 72.83%);
   //background: linear-gradient(163.55deg, #2E2EAA -28.44%, rgba(209, 209, 209, 0) 81.16%);
   //background: linear-gradient(164.08deg, #2E2EAA -36.1%, rgba(209, 209, 209, 0) 91.95%);
-  background: linear-gradient(13.19deg, #6B16D7 -12.56%, rgba(255, 255, 255, 0) 16.22%), linear-gradient(164.08deg, #2E2EAA -36.1%, rgba(209, 209, 209, 0) 91.95%);
+  //background: linear-gradient(13.19deg, #6B16D7 -12.56%, rgba(255, 255, 255, 0) 16.22%), linear-gradient(164.08deg, #2E2EAA -36.1%, rgba(209, 209, 209, 0) 91.95%);
+  background: linear-gradient(164.08deg, #2E2EAA -36.1%, rgba(209, 209, 209, 0) 91.95%);
   background-size: cover;
 }
 
@@ -108,3 +109,4 @@ a.navbar-item:hover {
   }
 }
 
+@import "extensions/_all";

@@ -18,15 +18,17 @@
                 element: '#land-gradient',
                 name: 'basic-gradient',
                 direction: 'diagonal', // 'diagonal', 'top-bottom', 'radial'
-                opacity: [0.5, 0.5],
+                opacity: [0.3, 0.5],
                 isPausedWhenNotInView: true,
+                transitionSpeed: 500,
                 states : {
                     "default-state": {
                         gradients: [
                             ['#fff6fc', '#312ca6'],
+                            ['#67ff56', '#312ca6'],
                             // ['#02AAB0', '#00CDAC'],
-                            ['#fff6fc', '#fff6fc'],
-                            ['#fff6fc', '#9733EE']
+                            // ['#fff6fc', '#fff6fc'],
+                            // ['#fff6fc', '#9733EE']
                         ]
                     }
                 }

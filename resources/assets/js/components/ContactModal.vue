@@ -13,7 +13,7 @@
                         ></button>
                 </p>
             </header>
-            <section class="modal-card-body p-16">
+            <section class="modal-card-body lg:p-16">
 
                 <div class="notification" :class="`is-${status}`" v-show="style.sent">
                     <button class="delete" @click="style.sent=false"></button>

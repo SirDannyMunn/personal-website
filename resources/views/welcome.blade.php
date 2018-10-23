@@ -6,7 +6,7 @@
     <section class="hero is-fullheight relative" id="land">
         <land-gradient></land-gradient>
         <div class="absolute" style="width: 100%;
-                                     height: 100%;
+                                     height: 90%;
                                      background-image: url({{url('images/angle_lg.png')}});
                                      background-repeat: no-repeat;
                                      background-size: 100% 100%;">
@@ -49,15 +49,15 @@
                                         and data science. Open to contract work for <u>development</u>, <u>data
                                             science</u>
                                         and <u>technical consultancy</u>.
-                                        <a class="button is-rounded border-purple-dark border-2 hover:bg-purple-dark hover:text-white"
+                                        <a class="button is-rounded border-blue-dark border-2 hover:bg-blue-dark hover:text-white"
                                            @click="$root.$emit('contactMeClicked', 'general')">Get in
                                             touch</a>
                                     </p>
 
                                     <span>
-                                                Worked with me before? <strong><a
-                                                    @click="$emit('contactMeClicked', 'review')">Leave a review</a></strong>
-                                            </span>
+                                        Worked with me before? <strong><a
+                                            @click="$emit('contactMeClicked', 'review')">Leave a review</a></strong>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
     <section class="section text-center">
         <div class="container">
             <h3 class="text-black"><strong>Note</strong>: this site is a <strong><u>work in progress</u></strong>. If we
-                have worked together in that past, please <strong><u><a @click="$emit('contactMeClicked', 'review')">leave
+                have worked together in the past, please <strong><u><a @click="$emit('contactMeClicked', 'review')">leave
                             me some feedback</a></u></strong> so I can fill it.</h3>
         </div>
     </section>
@@ -85,25 +85,22 @@
                     What services do i offer?
                 </h1>
                 <hr>
-                {{--<h2 class="subtitle">--}}
-                    {{--Meticulous software applications for all of the following platforms.--}}
-                {{--</h2>--}}
 
                 <div class="flex flex-wrap">
-                    <div class="flex-auto md:w-1/3 p-4">
-                        <div class="box text-black text-center bg-white hover:shadow-lg p-12 tilt hover:z-10 z-0">
-                            <img src="{{url('/svgs/cloud-computing.svg')}}" class="w-24 my-8" alt="">
-                            <h3 class="my-4">Web</h3>
-                            <br>
-                            <button class="sm:text-sm my-4 button is-rounded bg-white border-2 border-purple hover:bg-purple hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
-                        </div>
-                    </div>
                     <div class="flex-auto md:w-1/3 p-4">
                         <div class="box text-black text-center bg-white hover:shadow-lg p-12 tilt hover:z-10 z-0">
                             <img src="{{url('/svgs/smartphone.svg')}}" class="w-24 my-8" alt="">
                             <h3 class="my-4">Mobile</h3>
                             <br>
-                            <button class="sm:text-sm my-4 button is-rounded bg-white border-2 border-purple hover:bg-purple hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
+                            <button class="sm:text-sm my-4 button is-rounded bg-white border-2 border-blue-dark hover:bg-blue-dark hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
+                        </div>
+                    </div>
+                    <div class="flex-auto md:w-1/3 p-4">
+                        <div class="box text-black text-center bg-white hover:shadow-lg p-12 tilt hover:z-10 z-0">
+                            <img src="{{url('/svgs/cloud-computing.svg')}}" class="w-24 my-8" alt="">
+                            <h3 class="my-4">Web</h3>
+                            <br>
+                            <button class="sm:text-sm my-4 button is-rounded bg-white border-2 border-blue-dark hover:bg-blue-dark hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
                         </div>
                     </div>
                     <div class="flex-auto md:w-1/3 p-4">
@@ -111,7 +108,7 @@
                             <img src="{{url('/svgs/desktop.svg')}}" class="w-24 my-8" alt="">
                             <h3 class="my-4">Desktop</h3>
                             <br>
-                            <button class="sm:text-sm my-4 button is-rounded bg-white border-2 border-purple hover:bg-purple hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
+                            <button class="sm:text-sm my-4 button is-rounded bg-white border-2 border-blue-dark hover:bg-blue-dark hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
                         </div>
                     </div>
                 </div>
@@ -122,67 +119,75 @@
     {{--Info--}}
     <section class="section is-medium">
         <div class="container">
-            @tile_ancestor
-            {{--@slot('part_one')--}}
-                {{--<div class="flex flex-wrap">--}}
-                    {{--@box(['colour' => 'bg-green-light '])--}}
-                    {{--@slot('title')Productivity for business.@endslot--}}
-                    {{--@endbox--}}
-                    {{--@box(['colour' => 'bg-blue-light '])--}}
-                    {{--@slot('title')Designed for brains.@endslot--}}
-                    {{--@endbox--}}
-                    {{--@box(['colour' => 'bg-yellow-light '])--}}
-                    {{--@slot('title')Experience for humans.@endslot--}}
-                    {{--@endbox--}}
-                {{--</div>--}}
+            {{--@picture_card(['name' => 'Mark Woodward', 'twitter' => '@PrintedCupCo', 'image' => 'pcc_logo.jpg'])--}}
+            {{--@slot('content')--}}
+                {{--Daniel has been central to automating our systems and processes at the Printed Cup--}}
+                {{--Company, and has a great understanding of systems from web sites to crm and how get--}}
+                {{--systems connected, a very diligent worker, willing to find new ways to do things.--}}
             {{--@endslot--}}
+            {{--@endpicture_card--}}
+            {{--@tile_ancestor
+            --}}{{--@slot('part_one')
+                <div class="flex flex-wrap">
+                    @box(['colour' => 'bg-green-light '])
+                    @slot('title')Productivity for business.@endslot
+                    @endbox
+                    @box(['colour' => 'bg-blue-light '])
+                    @slot('title')Designed for brains.@endslot
+                    @endbox
+                    @box(['colour' => 'bg-yellow-light '])
+                    @slot('title')Experience for humans.@endslot
+                    @endbox
+                </div>
+            @endslot--}}{{--
             @slot('part_two')
                 <h1 class="title is-1">Testimonials</h1>
-                {{--<h1 class="subtitle">All software is designed</h1>--}}
+                --}}{{--<h1 class="subtitle">All software is designed</h1>--}}{{--
                 <div class="flex justify-center flex-wrap">
                     <div class="w-1/2 mx-2 px-4">
-                        @picture_card(['name' => 'Mark Woodward', 'twitter' => '@PrintedCupCo', 'image' => 'pcc_logo.jpg'])
-                            @slot('content')
-                                Daniel has been central to automating our systems and processes at the Printed Cup
-                                Company, and has a great understanding of systems from web sites to crm and how get
-                                systems connected, a very diligent worker, willing to find new ways to do things.
-                            @endslot
-                        @endpicture_card
+
                     </div>
-                    {{--<div class="flex-1 mx-2 px-4">--}}
-                        {{--@picture_card(['name' => 'Nobody', 'twitter' => '@boatymcboatface', 'image' => ''])--}}
-                            {{--@slot('content')--}}
-                                {{--Nobody's added anything to me :(--}}
-                            {{--@endslot--}}
-                        {{--@endpicture_card--}}
-                    {{--</div>--}}
+                    --}}{{--<div class="flex-1 mx-2 px-4">--}}{{--
+                        --}}{{--@picture_card(['name' => 'Nobody', 'twitter' => '@boatymcboatface', 'image' => ''])--}}{{--
+                            --}}{{--@slot('content')--}}{{--
+                                --}}{{--Nobody's added anything to me :(--}}{{--
+                            --}}{{--@endslot--}}{{--
+                        --}}{{--@endpicture_card--}}{{--
+                    --}}{{--</div>--}}{{--
                 </div>
             @endslot
             @slot('part_three')
                 <hr>
                 <div class="flex">
 
-                    {{--Tools of choice--}}
+                    --}}{{--Tools of choice--}}{{--
 
-                    {{--Rock, hammer, tools--}}
-                    {{--Unleash me on your problems.--}}
+                    --}}{{--Rock, hammer, tools--}}{{--
+                    --}}{{--Unleash me on your problems.--}}{{--
                 </div>
             @endslot
-            @endtile_ancestor
+            @endtile_ancestor--}}
         </div>
     </section>
 
     {{--Contact--}}
     <section class="section">
         <div class="container">
+
+
+            {{--<carousel-row>--}}
+                {{--<carousel-item slot="item"></carousel-item>--}}
+            {{--</carousel-row>--}}
+
+
             @tile_ancestor
-            @slot('part_one')
-                <h1 class="title is-1">Want to work together?</h1>
-                <br>
-                <button class="button is-rounded border-purple-dark hover:bg-purple-dark hover:text-white border-2"
-                        @click="$emit('contactMeClicked', 'hire')">Drop me an email!
-                </button>
-            @endslot
+                @slot('part_one')
+                    <h1 class="title">Want to work together?</h1>
+                    <br>
+                    <button class="button is-rounded border-blue-dark hover:bg-blue-dark hover:text-white border-2"
+                            @click="$emit('contactMeClicked', 'hire')">Drop me an email!
+                    </button>
+                @endslot
             @endtile_ancestor
         </div>
     </section>
