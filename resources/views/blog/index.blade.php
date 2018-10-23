@@ -5,7 +5,7 @@
         @foreach($posts as $post)
             <div class="post">
                 <a class="thumbnail"
-                   style="background-image:url('{{$post->image}}');"
+                   style="background-image:url('{{"storage/$post->image"}}');"
                    href="{{url("post/{$post->slug}")}}" title="{{$post->title}}">
                     <div class="dimmer-dark"></div>
                     <h1 class="entry-title">{{$post->title}}</h1>
