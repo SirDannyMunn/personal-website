@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property='og:title' content='Daniel Munn'>
-    <meta property='og:image' content='//{{url('images/logo_brain.png')}}'>
+    <meta property='og:title' content='Freelance developer'>
+    <meta property='og:image' content='{{url('/images/logo_brain.png')}}'>
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
-    <meta property='og:description' content=''>
-    <meta property='og:url' content='//www.munn.pro"'>
+    <meta property='og:description' content='Professional application developer and digital services consultant.'>
+    <meta property='og:url' content='https://www.munn.pro"'>
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 

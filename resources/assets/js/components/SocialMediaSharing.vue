@@ -1,8 +1,8 @@
 <template>
     <social-sharing url="https://munn.pro"
-                    title="Freelance application developer"
-                    description="Professional mobile, web and desktop application developer."
-                    quote="Vue is a progressive framework for building user interfaces."
+                    title=""
+                    description=""
+                    quote=""
                     hashtags="munn,developer"
                     twitter-user="@daniel_the_munn"
                     inline-template>
