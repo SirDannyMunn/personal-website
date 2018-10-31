@@ -35,7 +35,7 @@
                     <a class="navbar-item" href="{{url('blog')}}">
                         Blog
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" @click="scroll('services')">
                         Services
                     </a>
                     <a class="navbar-item"  @click="$emit('contactMeClicked', 'hire')">

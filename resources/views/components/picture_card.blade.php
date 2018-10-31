@@ -1,3 +1,4 @@
+
 <div class="card">
     <div class="card-image">
         <figure class="image max-w-sm max-h-sm m-auto">
@@ -24,4 +25,4 @@
             {!! $content !!}
         </div>
     </div>
-</div>
+    </div>

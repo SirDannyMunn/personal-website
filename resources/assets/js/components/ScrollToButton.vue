@@ -20,11 +20,7 @@
             console.log('Component mounted.')
         },
         methods: {
-            scroll() {
-                $([document.documentElement, document.body]).animate({
-                    scrollTop: $(`#${this.element}`).offset().top
-                }, 1000);
-            }
+
         }
     }
 </script>

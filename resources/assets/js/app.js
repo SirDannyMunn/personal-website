@@ -13,7 +13,9 @@ Vue.use(vueAxios, axios);
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-AOS.init();
+AOS.init({
+    once: true,
+});
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -21,13 +23,14 @@ AOS.init();
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('scroll-to-button', require('./components/ScrollToButton.vue'));
+// Vue.component('scroll-to-button', require('./components/ScrollToButton.vue'));
 Vue.component('contact-modal', require('./components/ContactModal.vue'));
-Vue.component('auto-animation', require('./components/AutoAnimation.vue'));
-Vue.component('seek-animation', require('./components/SeekAnimation.vue'));
+// Vue.component('auto-animation', require('./components/AutoAnimation.vue'));
+// Vue.component('seek-animation', require('./components/SeekAnimation.vue'));
 Vue.component('about-me', require('./components/AboutMe.vue'));
 Vue.component('social-media-sharing', require('./components/SocialMediaSharing.vue'));
-Vue.component('land-gradient', require('./components/LandGradientAnimation.vue'));
+// Vue.component('land-gradient', require('./components/LandGradientAnimation.vue'));
+Vue.component('carousel', require('./components/Carousel.vue'));
 
 // import anime from 'animejs';
 import 'tilt.js';
@@ -67,8 +70,10 @@ const app = new Vue({
         // });
     },
     methods: {
-        scroll() {
-
+        scroll(element) {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $(`#${element}`).offset().top
+            }, 1000);
         }
     }
 });

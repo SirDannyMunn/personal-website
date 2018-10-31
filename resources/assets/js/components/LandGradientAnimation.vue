@@ -17,15 +17,17 @@
             let granimInstance = new Granim({
                 element: '#land-gradient',
                 name: 'basic-gradient',
-                direction: 'diagonal', // 'diagonal', 'top-bottom', 'radial'
-                opacity: [0.3, 0.5],
+                direction: 'top-bottom', // 'diagonal', 'top-bottom', 'radial'
+                opacity: [0.75, 0.75],
                 isPausedWhenNotInView: true,
-                transitionSpeed: 500,
+                transitionSpeed: 100,
                 states : {
                     "default-state": {
                         gradients: [
-                            ['#fff6fc', '#312ca6'],
-                            ['#67ff56', '#312ca6'],
+                            ['#504DF2', '#2624A5'],
+                            ['#6D6BFF', '#A58C14'],
+                            ['#F2D54D', '#2624A5'],
+                            // ['#67ff56', '#312ca6'],
                             // ['#02AAB0', '#00CDAC'],
                             // ['#fff6fc', '#fff6fc'],
                             // ['#fff6fc', '#9733EE']

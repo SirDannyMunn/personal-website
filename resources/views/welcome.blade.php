@@ -4,7 +4,7 @@
 
     {{-- Land --}}
     <section class="hero is-fullheight relative" id="land">
-        <land-gradient></land-gradient>
+        {{--<land-gradient></land-gradient>--}}
         <div class="absolute" style="width: 100%;
                                      height: 90%;
                                      background-image: url({{url('images/angle_lg.png')}});
@@ -79,37 +79,32 @@
 
     {{--Services--}}
     <section class="hero is-medium">
-        <div class="hero-body">
+        <div class="hero-body" id="services">
             <div class="container text-center">
-                <h1 class="title">
-                    What services do i offer?
+                <h1 class="title text-5xl">
+                    Services
                 </h1>
                 <hr>
 
-                <div class="flex flex-wrap">
-                    <div class="flex-auto md:w-1/3 p-4">
-                        <div class="box text-black text-center bg-white hover:shadow-lg p-12 tilt hover:z-10 z-0">
-                            <img src="{{url('/svgs/smartphone.svg')}}" class="w-24 my-8" alt="">
-                            <h3 class="my-4">Mobile</h3>
-                            <br>
-                            <button class="sm:text-sm my-4 button is-rounded bg-white border-2 border-blue-dark hover:bg-blue-dark hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
-                        </div>
+                <div class="flex flex-wrap content-center">
+                    <div class="flex-auto md:w-full lg:w-1/2 lg:p-0 p-12">
+                        <h2>Applications for all platforms</h2>
+                        <br>
+                        @include('components.cards', ['options'=>[
+                        ['svg'=>'smartphone.svg','title'=>'Mobile'],
+                        ['svg'=>'cloud-computing.svg','title'=>'Web', 'delay'=>'250'],
+                        ['svg'=>'desktop.svg','title'=>'Desktop', 'delay'=>'250'],
+                        ]])
                     </div>
-                    <div class="flex-auto md:w-1/3 p-4">
-                        <div class="box text-black text-center bg-white hover:shadow-lg p-12 tilt hover:z-10 z-0">
-                            <img src="{{url('/svgs/cloud-computing.svg')}}" class="w-24 my-8" alt="">
-                            <h3 class="my-4">Web</h3>
-                            <br>
-                            <button class="sm:text-sm my-4 button is-rounded bg-white border-2 border-blue-dark hover:bg-blue-dark hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
-                        </div>
-                    </div>
-                    <div class="flex-auto md:w-1/3 p-4">
-                        <div class="box text-black text-center bg-white hover:shadow-lg p-12 tilt hover:z-10 z-0">
-                            <img src="{{url('/svgs/desktop.svg')}}" class="w-24 my-8" alt="">
-                            <h3 class="my-4">Desktop</h3>
-                            <br>
-                            <button class="sm:text-sm my-4 button is-rounded bg-white border-2 border-blue-dark hover:bg-blue-dark hover:text-white" @click="$emit('contactMeClicked', 'general')">More info</button>
-                        </div>
+
+                    <div class="flex-auto md:w-full lg:w-1/2 lg:p-0 p-12">
+                        <h2>Cutting edge technologies</h2>
+                        <br>
+                        @include('components.cards', ['options'=>[
+                        ['svg'=>'computer-network.svg','title'=>'Data', 'delay'=>'500'],
+                        ['svg'=>'ai-half-brain.svg','title'=>'Machine Learning', 'delay'=>'750'],
+                        ['svg'=>'pad.svg','title'=>'IOT', 'delay'=>'500'],
+                        ]])
                     </div>
                 </div>
             </div>
@@ -117,78 +112,38 @@
     </section>
 
     {{--Info--}}
-    <section class="section is-medium">
-        <div class="container">
-            {{--@picture_card(['name' => 'Mark Woodward', 'twitter' => '@PrintedCupCo', 'image' => 'pcc_logo.jpg'])--}}
-            {{--@slot('content')--}}
-                {{--Daniel has been central to automating our systems and processes at the Printed Cup--}}
-                {{--Company, and has a great understanding of systems from web sites to crm and how get--}}
-                {{--systems connected, a very diligent worker, willing to find new ways to do things.--}}
-            {{--@endslot--}}
-            {{--@endpicture_card--}}
-            {{--@tile_ancestor
-            --}}{{--@slot('part_one')
-                <div class="flex flex-wrap">
-                    @box(['colour' => 'bg-green-light '])
-                    @slot('title')Productivity for business.@endslot
-                    @endbox
-                    @box(['colour' => 'bg-blue-light '])
-                    @slot('title')Designed for brains.@endslot
-                    @endbox
-                    @box(['colour' => 'bg-yellow-light '])
-                    @slot('title')Experience for humans.@endslot
-                    @endbox
-                </div>
-            @endslot--}}{{--
-            @slot('part_two')
-                <h1 class="title is-1">Testimonials</h1>
-                --}}{{--<h1 class="subtitle">All software is designed</h1>--}}{{--
-                <div class="flex justify-center flex-wrap">
-                    <div class="w-1/2 mx-2 px-4">
-
-                    </div>
-                    --}}{{--<div class="flex-1 mx-2 px-4">--}}{{--
-                        --}}{{--@picture_card(['name' => 'Nobody', 'twitter' => '@boatymcboatface', 'image' => ''])--}}{{--
-                            --}}{{--@slot('content')--}}{{--
-                                --}}{{--Nobody's added anything to me :(--}}{{--
-                            --}}{{--@endslot--}}{{--
-                        --}}{{--@endpicture_card--}}{{--
-                    --}}{{--</div>--}}{{--
-                </div>
-            @endslot
-            @slot('part_three')
-                <hr>
-                <div class="flex">
-
-                    --}}{{--Tools of choice--}}{{--
-
-                    --}}{{--Rock, hammer, tools--}}{{--
-                    --}}{{--Unleash me on your problems.--}}{{--
-                </div>
-            @endslot
-            @endtile_ancestor--}}
+    <section class="section is-medium md:hidden">
+        <div class="container text-center">
+            <h1 class="title text-5xl">
+                Testimonials
+            </h1>
+            <hr>
+            <div class="w-1/2 m-auto">
+                @picture_card(['name' => 'Mark Woodward', 'twitter' => '@PrintedCupCo', 'image' => 'pcc_logo.jpg'])
+                @slot('content')
+                    Daniel has been central to automating our systems and processes at the Printed Cup
+                    Company, and has a great understanding of systems from web sites to crm and how get
+                    systems connected, a very diligent worker, willing to find new ways to do things.
+                @endslot
+                @endpicture_card
+            </div>
         </div>
     </section>
 
     {{--Contact--}}
-    <section class="section">
+    <section class="pb-52 section is-medium" style="padding-bottom: 13rem;">
         <div class="container">
-
-
-            {{--<carousel-row>--}}
-                {{--<carousel-item slot="item"></carousel-item>--}}
-            {{--</carousel-row>--}}
-
-
-            @tile_ancestor
-                @slot('part_one')
-                    <h1 class="title">Want to work together?</h1>
-                    <br>
-                    <button class="button is-rounded border-blue-dark hover:bg-blue-dark hover:text-white border-2"
-                            @click="$emit('contactMeClicked', 'hire')">Drop me an email!
-                    </button>
-                @endslot
-            @endtile_ancestor
+            <div class="flex flex-wrap justify-center content-center" style="align-items: center;">
+                <div class="md:w-full lg:w-1/2 md:text-left lg:text-center">
+                    <img class="sm:w-32 md:w-48 md:pb-4 lg:p-0 lg:w-84 align-middle" src="{{url('/svgs/ai-brain.svg')}}" alt="">
+                </div>
+                <div class="md:w-full lg:w-1/2">
+                    <h1 class="text-4xl font-black lg:leading-normal leading-loose" data-aos="fade-up">Let's work together and build something amazing.</h1>
+                    <h1 class="text-xl leading-loose lg:mb-4 mb-12" data-aos="fade-up" data-aos-delay="250">Get in touch for a free quote</h1>
+                    <button class="button is-rounded is-large border-blue-dark border-2 hover:bg-blue-dark hover:text-white"
+                            @click="$emit('contactMeClicked', 'hire')" data-aos="fade-up" data-aos-delay="500">Contact</button>
+                </div>
+            </div>
         </div>
     </section>
 @endsection

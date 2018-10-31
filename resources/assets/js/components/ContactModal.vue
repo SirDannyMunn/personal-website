@@ -61,7 +61,7 @@
 
                 <div class="pt-12">
                     <p class="control text-center">
-                        <button class="button is-rounded border-purple-dark hover:bg-purple-dark hover:text-white" @click="submit"
+                        <button class="button is-rounded border-blue-dark hover:bg-blue-dark hover:text-white" @click="submit"
                            :class="{ 'is-loading' : style.sending }">
                             <span>Send</span>
                         </button>

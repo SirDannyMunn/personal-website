@@ -39,9 +39,9 @@
         @yield('content')
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="content text-center text-grey-light">
+    <footer class="footer p-0 bg-black">
+        <div class="container " style="padding: 4rem !important;">
+            <div class="content text-center text-grey-light" style="padding: 6rem;">
                 <p>
                     <strong>Crafted with keyboard and brain</strong> by <a href="https://jgthms.com">Daniel Munn</a>.
                     <br>
@@ -51,17 +51,19 @@
                         <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
                         <div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
                         <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                        <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Smashicons">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
                     </div>
                 <Hr>
                     <social-media-sharing></social-media-sharing>
                 </p>
             </div>
         </div>
-    </footer>
 
-    <div class="w-full">
-        <img class="w-full" src="{{url('svgs/graph_lg.svg')}}" alt="">
-    </div>
+        <div class="w-full">
+            <img class="w-full" src="{{url('svgs/graph_lg_dark_bg.svg')}}" style="margin-bottom:-10px;">
+        </div>
+    </footer>
 </div>
 </body>
 <script src="{{mix('js/app.js')}}"></script>
