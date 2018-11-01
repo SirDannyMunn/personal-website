@@ -47,6 +47,7 @@ const app = new Vue({
             web: false,
             machineLearning: false,
             data: false,
+            iOT: false
         }
     },
     mounted() {

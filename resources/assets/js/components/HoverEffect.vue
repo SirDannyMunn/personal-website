@@ -5,7 +5,8 @@
             return {}
         },
         mounted() {
-            document.querySelector('.navbar').onmousemove = (e) => {
+            // document.querySelector('.navbar').onmousemove = (e) => {
+            this.$refs.hover.onmousemove = (e) => {
                 const x = e.pageX - e.target.offsetLeft;
                 const y = e.pageY - e.target.offsetTop;
                 if (Math.abs(x) < 50 && Math.abs(y) < 50) {
@@ -18,11 +19,11 @@
 </script>
 
 <style lang="scss" scoped>
-    .navbar {
+    .hover-container {
         overflow: hidden;
     }
 
-    .navbar-end .navbar-item {
+    .hover-effect {
         position: relative;
 
         span {
@@ -37,7 +38,7 @@
              top: var(--y);
              width: var(--size);
              height: var(--size);
-             background: radial-gradient(circle closest-side, #4405f7, transparent);
+             background: radial-gradient(circle closest-side, rgb(46, 46, 170), transparent);
              opacity: 0.5;
              transform: translate(-50%, -50%);
              transition: width .2s ease, height .2s ease;
