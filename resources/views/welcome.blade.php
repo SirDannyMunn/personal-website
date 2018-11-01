@@ -17,9 +17,11 @@
                 <div class="md:mb-32">
 
                     {{--Logo--}}
-                    {{--<div class="sm:w-full md:mx-16 md:w-3/4 lg:w-1/3 xxl:w-1/3 lg:pt-16 pb-16">--}}
-                        {{--@include('svgs.logo')--}}
-                    {{--</div>--}}
+                    <div class="sm:w-full md:mx-16 md:w-3/4 lg:w-1/3 xxl:w-1/3 lg:pt-16 pb-16 md:hidden sm:block">
+                        <img class="w-80" src="{{url('svgs/logo_2.svg')}}" alt="">
+
+                    {{--@include('svgs.logo')--}}
+                    </div>
 
                     {{--About Me--}}
                     <div class="p-4 animated bounceInLeft slow bg-white shadow-lg is-bordered rounded-full has-text-centered">
