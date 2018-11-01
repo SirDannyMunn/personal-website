@@ -2,7 +2,7 @@
 <hover-effect inline-template>
     <div ref="hover" class="hero-head">
         <nav class="navbar shadow-md py-2 hover-container">
-            <div class="container" style="padding: 1rem 8rem;">
+            <div class="container lg:px-32 sm:px-8" style="padding-top: 1rem; padding-bottom: 1rem">
                 <div class="navbar-brand">
                     <span class="navbar-burger burger" @click="!burgerOpen?burgerOpen=true:burgerOpen=false">
                         <span></span>
