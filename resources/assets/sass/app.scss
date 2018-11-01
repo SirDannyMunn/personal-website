@@ -89,6 +89,10 @@ a.navbar-item:hover {
   overflow: hidden
 }
 
+.button:hover {
+  border: none;
+}
+
 @tailwind components;
 @tailwind preflight;
 @tailwind utilities;

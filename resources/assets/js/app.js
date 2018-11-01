@@ -31,6 +31,7 @@ Vue.component('about-me', require('./components/AboutMe.vue'));
 Vue.component('social-media-sharing', require('./components/SocialMediaSharing.vue'));
 // Vue.component('land-gradient', require('./components/LandGradientAnimation.vue'));
 Vue.component('carousel', require('./components/Carousel.vue'));
+Vue.component('hover-effect', require('./components/HoverEffect.vue'));
 
 // import anime from 'animejs';
 import 'tilt.js';
@@ -39,7 +40,14 @@ const app = new Vue({
     el: '#app',
     data: {
         burgerOpen: false,
-        faviconAttributions: false
+        faviconAttributions: false,
+        cards: {
+            mobile: false,
+            desktop: false,
+            web: false,
+            machineLearning: false,
+            data: false,
+        }
     },
     mounted() {
         $('.tilt').tilt({
@@ -74,6 +82,10 @@ const app = new Vue({
             $([document.documentElement, document.body]).animate({
                 scrollTop: $(`#${element}`).offset().top
             }, 1000);
+        },
+        showCardInfo(card) {
+            Object.keys(this.cards).forEach(key => this.cards[key] = false);
+            this.cards[card] = true;
         }
     }
 });

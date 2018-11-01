@@ -12,6 +12,10 @@ mix.js('resources/assets/js/app.js', 'public/js')
 
 mix.browserSync('portfolio.test:8000');
 
+mix.webpackConfig({
+    devtool: 'eval-source-map'
+});
+
 if (mix.inProduction()) {
     mix.version();
 }

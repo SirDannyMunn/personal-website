@@ -2,7 +2,7 @@
     <div class="flex flex-wrap content-center justify-center items-center" style="align-items: center">
         @foreach($options as $option)
             <div class="md:w-1/2 p-4"
-
+                 @click="showCardInfo('{{camel_case($option['title'])}}')"
                  data-aos="fade-right"
                  @if(isset($option['delay']))
                     data-aos-delay="{{$option['delay']}}"

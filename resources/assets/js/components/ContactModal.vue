@@ -1,6 +1,6 @@
 <template>
     <div class="modal" :class="{ 'is-active' : style.visible }">
-        <div class="modal-background"></div>
+        <div class="modal-background" @click="style.visible=false"></div>
 
         <div class="modal-card rounded-full" :class="animation">
             <header class="modal-card-head text-center p-12">
@@ -115,11 +115,12 @@
                 }
 
                 this.style.sending=true;
+                let self = this;
 
-                this.$root.axios.post('message', this.data)
+                this.$root.axios.post('message', self.data)
                     .then(r => {
-                        this.status = 'success';
-                        this.data.forEach(field => field=null)
+                        self.status = 'success';
+                        Object.keys(self.data).forEach(key => self.data[key] = null)
                     })
                     .catch(e => this.status = 'danger')
                     .finally(r => {
