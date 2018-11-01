@@ -80,8 +80,9 @@ const app = new Vue({
     },
     methods: {
         scroll(element) {
+            let el = $(`#${element}`);
             $([document.documentElement, document.body]).animate({
-                scrollTop: $(`#${element}`).offset().top
+                scrollTop: el.offset().top - el.height()
             }, 1000);
         },
         showCardInfo(card) {
