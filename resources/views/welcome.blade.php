@@ -83,7 +83,7 @@
                 </h1>
 
                 <hr>
-                <section class="section px-0">
+                <section class="section px-0 sm:pt-24">
                     <div class="flex flex-wrap content-center">
                     <div class="flex-auto md:w-1/2 lg:w-1/2 lg:p-0">
                         <br>
@@ -95,7 +95,7 @@
                     </div>
 
                     <div class="flex-auto md:w-full lg:w-1/2 lg:p-0 m-auto" data-aos="fade-down" data-aos-delay="500">
-                        <div class="leading-loose px-24">
+                        <div class="leading-loose md:px-24" id="apps-info">
                             <div class="animated fadeIn" v-if="!cards.mobile && !cards.desktop && !cards.web">
                                 <h2>Applications For All Platforms</h2>
                                 <p>
@@ -132,10 +132,10 @@
                 </section>
 
                 <hr>
-                <section class="section px-0">
+                <section class="section px-0 sm:pt-24">
                     <div class="flex lg:flex-wrap flex-wrap-reverse content-center">
                     <div class="flex-auto md:w-full lg:w-1/2 lg:p-0 m-auto" data-aos="fade-up" data-aos-delay="500">
-                        <div class="leading-loose px-24">
+                        <div class="leading-loose md:px-24" id="data-science-info">
                             <div class="animated fadeIn" v-if="!cards.data && !cards.machineLearning && !cards.iOT">
                                 <h2>Cutting Edge Technology Integrations</h2>
                                 <p>

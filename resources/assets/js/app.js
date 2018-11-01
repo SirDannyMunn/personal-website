@@ -87,6 +87,10 @@ const app = new Vue({
         showCardInfo(card) {
             Object.keys(this.cards).forEach(key => this.cards[key] = false);
             this.cards[card] = true;
+
+            if (window.innerWidth < 450) {
+                this.scroll(`${card==='iOT'||card==='machineLearning'||card==='data'? 'data-science' : 'apps'}-info`);
+            }
         }
     }
 });
