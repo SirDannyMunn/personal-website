@@ -79,7 +79,7 @@
     {{--Services--}}
     <section class="hero is-medium">
         <div class="hero-body">
-            <div class="container text-center" id="services">
+            <div class="container text-center">
                 <h1 class="title text-5xl">
                     Services
                 </h1>
@@ -87,7 +87,7 @@
                 <hr>
                 <section class="section px-0 sm:pt-24">
                     <div class="flex flex-wrap content-center">
-                    <div class="flex-auto md:w-1/2 lg:w-1/2 lg:p-0">
+                    <div class="flex-auto md:w-1/2 lg:w-1/2 lg:p-0" id="services">
                         <br>
                         @include('components.cards', ['options'=>[
                         ['svg'=>'smartphone.svg','title'=>'Mobile'],

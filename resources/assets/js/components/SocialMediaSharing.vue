@@ -47,7 +47,7 @@
     Vue.use(SocialSharing);
 
     export default {
-        name: "Polygon",
+        name: "SocialMediaSharing",
         data() {
             return {
 

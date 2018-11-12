@@ -1,5 +1,5 @@
 <div class="flex flex-wrap">
-    <div class="flex flex-wrap content-center justify-center items-center" style="align-items: center">
+    <div class="flex flex-wrap content-center justify-center items-center sm:mb-16 md:mb-0" style="align-items: center">
         @foreach($options as $option)
             <div class="md:w-1/2 p-4"
                  @click="showCardInfo('{{camel_case($option['title'])}}')"
@@ -7,7 +7,6 @@
                  @if(isset($option['delay']))
                     data-aos-delay="{{$option['delay']}}"
                  @endif
-
             >
                 <div class="box text-black text-center bg-white hover:shadow-lg p-12 tilt hover:z-10 z-0 cursor-pointer">
                     <img src='{{url("/svgs/{$option['svg']}")}}' class="w-24 " alt="">

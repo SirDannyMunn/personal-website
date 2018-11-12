@@ -40,7 +40,7 @@
     </main>
 
     <footer class="relative footer p-0 bg-black">
-        <div class="absolute pin-l h-full" data-aos="fade-right">
+        <div class="absolute pin-l h-full z-40" data-aos="fade-right">
             <div class="px-6 flex flex-col text-white">
                 <a class="py-12" href="https://github.com/danthemun">
                     <i class="fab fa-github text-2xl"></i>

@@ -82,7 +82,7 @@ const app = new Vue({
         scroll(element) {
             let el = $(`#${element}`);
             $([document.documentElement, document.body]).animate({
-                scrollTop: el.offset().top - el.height()
+                scrollTop: el.offset().top - (el.height() / 2)
             }, 1000);
         },
         showCardInfo(card) {
